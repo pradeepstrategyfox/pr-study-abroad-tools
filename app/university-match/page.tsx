@@ -10,12 +10,13 @@ const PROGRAMS: Array<"MS" | "MBA" | "UG"> = ["MS", "MBA", "UG"];
 
 export default function UniversityMatchPage() {
   const countries = useMemo(() => ["Any", ...countryList()], []);
+  const defaultCountry = useMemo(() => countryList()[0] ?? "Any", []);
 
   const [tenthMarks, setTenthMarks] = useState(85);
   const [twelfthMarks, setTwelfthMarks] = useState(82);
   const [ugCGPA, setUgCGPA] = useState(7.8);
   const [workExperienceYears, setWXP] = useState(2);
-  const [targetCountry, setTargetCountry] = useState("USA");
+  const [targetCountry, setTargetCountry] = useState(defaultCountry);
   const [ieltsScore, setIELTS] = useState<number>(7.0);
   const [greScore, setGRE] = useState<number>(0);
   const [programType, setProgram] = useState<"MS" | "MBA" | "UG">("MS");
@@ -54,16 +55,16 @@ export default function UniversityMatchPage() {
 
   return (
     <div className="bg-white">
-      <div className="max-w-6xl mx-auto px-5 pt-20 pb-12">
+      <div className="max-w-6xl mx-auto px-5 pt-12 md:pt-20 pb-10 md:pb-12">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-[15px] font-medium text-[#0071e3] mb-4">Admit Predictor</p>
-          <h1 className="title-display text-4xl md:text-6xl text-[#1d1d1f]">Where can you get in?</h1>
-          <p className="mt-6 text-[18px] text-[#6e6e73] leading-relaxed">
-            Tell us about your profile. We&apos;ll rank 70+ universities into Ambitious, Target and Safe, with admit probability and a profile of each school.
+          <p className="text-[14px] md:text-[15px] font-medium text-[#0071e3] mb-3 md:mb-4">Admit Predictor</p>
+          <h1 className="title-display text-[34px] sm:text-5xl md:text-6xl text-[#1d1d1f]">Where can you get in?</h1>
+          <p className="mt-5 md:mt-6 text-[16px] md:text-[18px] text-[#6e6e73] leading-relaxed">
+            Tell us about your profile. We&apos;ll rank universities into Ambitious, Target and Safe, with admit probability and a profile of each school.
           </p>
         </div>
 
-        <form onSubmit={onPredict} className="mt-12 rounded-3xl bg-[#f5f5f7] p-6 md:p-10 grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <form onSubmit={onPredict} className="mt-10 md:mt-12 rounded-2xl md:rounded-3xl bg-[#f5f5f7] p-5 md:p-10 grid md:grid-cols-2 gap-4 md:gap-5 max-w-4xl mx-auto">
           <Input label="10th marks (%)" min={0} max={100} value={tenthMarks} onChange={setTenthMarks} step={1} />
           <Input label="12th marks (%)" min={0} max={100} value={twelfthMarks} onChange={setTwelfthMarks} step={1} />
           <Input label="UG CGPA (/10)" min={0} max={10} value={ugCGPA} onChange={setUgCGPA} step={0.1} />
@@ -83,33 +84,33 @@ export default function UniversityMatchPage() {
       </div>
 
       {result && (
-        <div id="results" className="bg-[#f5f5f7] py-20">
+        <div id="results" className="bg-[#f5f5f7] py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-5">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8 md:mb-12">
               <h2 className="title-section text-3xl md:text-5xl text-[#1d1d1f]">Your university matches</h2>
-              <p className="mt-3 text-[15px] text-[#6e6e73]">
+              <p className="mt-3 text-[14px] md:text-[15px] text-[#6e6e73]">
                 Considered {result.totalConsidered} programs in {targetCountry === "Any" ? "all destinations" : targetCountry}
               </p>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-10 md:space-y-12">
               <BucketRow title="Ambitious" subtitle="Reach schools. Strong applications stand a chance." accent="#d6336c" matches={result.ambitious} />
               <BucketRow title="Target" subtitle="A realistic match for your profile." accent="#0071e3" matches={result.target} />
               <BucketRow title="Safe" subtitle="High likelihood of an admit." accent="#1f8a3a" matches={result.safe} />
             </div>
 
-            <div className="mt-20 rounded-3xl bg-[#1d1d1f] text-white px-8 md:px-12 py-12 text-center">
-              <h3 className="title-section text-3xl md:text-4xl">Get the full PDF report</h3>
-              <p className="mt-4 text-[17px] text-white/70 max-w-xl mx-auto">
+            <div className="mt-14 md:mt-20 rounded-2xl md:rounded-3xl bg-[#1d1d1f] text-white px-6 md:px-12 py-10 md:py-12 text-center">
+              <h3 className="title-section text-2xl md:text-4xl">Get the full PDF report</h3>
+              <p className="mt-3 md:mt-4 text-[15px] md:text-[17px] text-white/70 max-w-xl mx-auto leading-relaxed">
                 A premium, shareable report with detailed school profiles, tuition fit, and a counsellor follow-up. Free.
               </p>
-              <div className="mt-8">
+              <div className="mt-7 md:mt-8">
                 {unlockedLead ? (
-                  <button onClick={() => downloadPDF(unlockedLead)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                  <button onClick={() => downloadPDF(unlockedLead)} className="inline-flex items-center bg-white text-black rounded-full px-6 md:px-7 py-3 md:py-3.5 font-medium text-[15px] hover:opacity-90">
                     Download PDF again
                   </button>
                 ) : (
-                  <button onClick={() => setModalOpen(true)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                  <button onClick={() => setModalOpen(true)} className="inline-flex items-center bg-white text-black rounded-full px-6 md:px-7 py-3 md:py-3.5 font-medium text-[15px] hover:opacity-90">
                     Email me the PDF
                   </button>
                 )}
@@ -149,7 +150,7 @@ function BucketRow({ title, subtitle, accent, matches }: { title: string; subtit
   return (
     <div>
       <BucketHeader title={title} subtitle={subtitle} accent={accent} />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
         {matches.map((m) => <MatchCard key={m.university.name} m={m} />)}
       </div>
     </div>
@@ -158,12 +159,12 @@ function BucketRow({ title, subtitle, accent, matches }: { title: string; subtit
 
 function BucketHeader({ title, subtitle, accent }: { title: string; subtitle: string; accent: string }) {
   return (
-    <div className="flex items-baseline gap-3 mb-6">
+    <div className="mb-5 md:mb-6">
       <div className="flex items-center gap-2.5">
         <span className="inline-block w-2 h-2 rounded-full" style={{ background: accent }} />
         <h3 className="title-section text-2xl md:text-3xl text-[#1d1d1f]">{title}</h3>
       </div>
-      <p className="text-[14px] text-[#6e6e73]">{subtitle}</p>
+      <p className="text-[13px] md:text-[14px] text-[#6e6e73] mt-1.5 ml-4">{subtitle}</p>
     </div>
   );
 }

@@ -40,17 +40,17 @@ export default function LeadModal({ open, onClose, tool, payload, onSuccess, cta
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
-      <div className="bg-white rounded-3xl w-full max-w-md p-7 md:p-9 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-black/40 backdrop-blur-sm">
+      <div className="bg-white rounded-t-3xl sm:rounded-3xl w-full max-w-md p-6 sm:p-7 md:p-9 shadow-2xl">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="title-section text-2xl text-[#1d1d1f]">Get your PDF report</h3>
-          <button onClick={onClose} aria-label="Close" className="-mr-1 w-8 h-8 rounded-full hover:bg-[#f5f5f7] text-[#6e6e73] flex items-center justify-center">✕</button>
+          <h3 className="title-section text-xl sm:text-2xl text-[#1d1d1f]">Get your PDF report</h3>
+          <button onClick={onClose} aria-label="Close" className="-mr-1 w-9 h-9 rounded-full hover:bg-[#f5f5f7] text-[#6e6e73] flex items-center justify-center text-lg">✕</button>
         </div>
         <p className="text-[14px] text-[#6e6e73] leading-relaxed">
           We&apos;ll email it instantly, and a PR Study Abroad counsellor will reach out with a personalized plan.
         </p>
 
-        <form onSubmit={submit} className="mt-6 space-y-4">
+        <form onSubmit={submit} className="mt-5 sm:mt-6 space-y-4">
           <Field label="Full name" value={name} onChange={setName} placeholder="Aarav Sharma" />
           <Field label="Email" value={email} onChange={setEmail} placeholder="you@example.com" type="email" />
           <Field label="Phone (with country code)" value={phone} onChange={setPhone} placeholder="+91 98xxxxxxxx" type="tel" />

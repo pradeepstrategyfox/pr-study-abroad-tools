@@ -42,16 +42,16 @@ export default function CostCalculatorPage() {
 
   return (
     <div className="bg-white">
-      <div className="max-w-6xl mx-auto px-5 pt-20 pb-12">
+      <div className="max-w-6xl mx-auto px-5 pt-12 md:pt-20 pb-10 md:pb-12">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-[15px] font-medium text-[#0071e3] mb-4">Cost Calculator</p>
-          <h1 className="title-display text-4xl md:text-6xl text-[#1d1d1f]">What it really costs.</h1>
-          <p className="mt-6 text-[18px] text-[#6e6e73] leading-relaxed">
+          <p className="text-[14px] md:text-[15px] font-medium text-[#0071e3] mb-3 md:mb-4">Cost Calculator</p>
+          <h1 className="title-display text-[34px] sm:text-5xl md:text-6xl text-[#1d1d1f]">What it really costs.</h1>
+          <p className="mt-5 md:mt-6 text-[16px] md:text-[18px] text-[#6e6e73] leading-relaxed">
             Tuition, living, visa, flights, insurance. Year by year. In rupees. With your monthly burn rate.
           </p>
         </div>
 
-        <form onSubmit={onCompute} className="mt-12 rounded-3xl bg-[#f5f5f7] p-6 md:p-10 grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <form onSubmit={onCompute} className="mt-10 md:mt-12 rounded-2xl md:rounded-3xl bg-[#f5f5f7] p-5 md:p-10 grid md:grid-cols-2 gap-4 md:gap-5 max-w-4xl mx-auto">
           <Select label="Country" value={country} onChange={setCountry} options={countryOpts.map(c => ({ label: c, value: c }))} />
           <Select label="City" value={city} onChange={setCity} options={cityOpts.map(c => ({ label: c, value: c }))} />
           <Select label="Course type" value={courseType} onChange={(v) => setCourseType(v as "MS" | "MBA" | "UG")} options={[{ label: "MS", value: "MS" }, { label: "MBA", value: "MBA" }, { label: "UG", value: "UG" }]} />
@@ -64,19 +64,19 @@ export default function CostCalculatorPage() {
       </div>
 
       {result && (
-        <div id="results" className="bg-[#f5f5f7] py-20">
+        <div id="results" className="bg-[#f5f5f7] py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-5">
-            <div className="rounded-3xl overflow-hidden bg-white ring-1 ring-black/[0.06]">
-              <div className="relative h-44 md:h-56 overflow-hidden">
+            <div className="rounded-2xl md:rounded-3xl overflow-hidden bg-white ring-1 ring-black/[0.06]">
+              <div className="relative h-36 sm:h-44 md:h-56 overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={countryCover(result.country)} alt={result.country} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <div className="text-[11px] uppercase tracking-widest opacity-80">{result.courseType} · {result.durationYears} {result.durationYears === 1 ? "year" : "years"}</div>
-                  <h2 className="title-display text-3xl md:text-5xl mt-1">{result.city}, {result.country}</h2>
+                <div className="absolute bottom-5 md:bottom-6 left-5 md:left-6 right-5 md:right-6 text-white">
+                  <div className="text-[10px] md:text-[11px] uppercase tracking-widest opacity-80">{result.courseType} · {result.durationYears} {result.durationYears === 1 ? "year" : "years"}</div>
+                  <h2 className="title-display text-2xl sm:text-3xl md:text-5xl mt-1">{result.city}, {result.country}</h2>
                 </div>
               </div>
-              <div className="grid md:grid-cols-4 gap-px bg-black/[0.06]">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-black/[0.06]">
                 <Stat label="Total estimated cost" value={formatINR(result.grandTotalINR)} highlight />
                 <Stat label="Monthly burn rate" value={formatINR(result.monthlyBurnINR)} />
                 <Stat label="One-time (visa + flights)" value={formatINR(result.oneTimeINR)} />
@@ -119,18 +119,18 @@ export default function CostCalculatorPage() {
               </div>
             </div>
 
-            <div className="mt-12 rounded-3xl bg-[#1d1d1f] text-white px-8 md:px-12 py-12 text-center">
-              <h3 className="title-section text-3xl md:text-4xl">Get this as a PDF</h3>
-              <p className="mt-4 text-[17px] text-white/70 max-w-xl mx-auto">
+            <div className="mt-10 md:mt-12 rounded-2xl md:rounded-3xl bg-[#1d1d1f] text-white px-6 md:px-12 py-10 md:py-12 text-center">
+              <h3 className="title-section text-2xl md:text-4xl">Get this as a PDF</h3>
+              <p className="mt-3 md:mt-4 text-[15px] md:text-[17px] text-white/70 max-w-xl mx-auto leading-relaxed">
                 Share with parents or sponsors. Clean, branded, ready to print. Free.
               </p>
-              <div className="mt-8">
+              <div className="mt-7 md:mt-8">
                 {unlockedLead ? (
-                  <button onClick={() => downloadPDF(unlockedLead)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                  <button onClick={() => downloadPDF(unlockedLead)} className="inline-flex items-center bg-white text-black rounded-full px-6 md:px-7 py-3 md:py-3.5 font-medium text-[15px] hover:opacity-90">
                     Download PDF again
                   </button>
                 ) : (
-                  <button onClick={() => setModalOpen(true)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                  <button onClick={() => setModalOpen(true)} className="inline-flex items-center bg-white text-black rounded-full px-6 md:px-7 py-3 md:py-3.5 font-medium text-[15px] hover:opacity-90">
                     Email me the PDF
                   </button>
                 )}

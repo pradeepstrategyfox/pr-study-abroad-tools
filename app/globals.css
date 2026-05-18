@@ -18,27 +18,61 @@ html, body {
   letter-spacing: -0.011em;
 }
 
-h1, h2, h3, h4 {
-  letter-spacing: -0.022em;
-}
+h1, h2, h3, h4 { letter-spacing: -0.022em; }
 
-.title-display {
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-}
+.title-display { font-weight: 700; letter-spacing: -0.04em; line-height: 1.05; }
+.title-section { font-weight: 600; letter-spacing: -0.03em; line-height: 1.12; }
 
-.title-section {
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
-}
-
+/* Sticky header — less transparent, stronger blur for liquid glass feel */
 .glass {
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
+
+/* Liquid-glass card surface — translucent with depth */
+.liquid {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: saturate(180%) blur(28px);
+  -webkit-backdrop-filter: saturate(180%) blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 12px 32px -12px rgba(0, 0, 0, 0.18),
+    0 2px 8px -2px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark-mode liquid (used on hero / dark backgrounds) */
+.liquid-dark {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: saturate(160%) blur(20px);
+  -webkit-backdrop-filter: saturate(160%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18) inset,
+    0 12px 40px -12px rgba(0, 0, 0, 0.55);
+}
+
+/* Animated soft gradient backdrop for hero */
+.gradient-mesh {
+  position: relative;
+  overflow: hidden;
+}
+.gradient-mesh::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(40% 30% at 18% 22%, rgba(0, 113, 227, 0.22), transparent 70%),
+    radial-gradient(35% 28% at 82% 18%, rgba(168, 85, 247, 0.18), transparent 70%),
+    radial-gradient(45% 35% at 50% 90%, rgba(245, 158, 11, 0.16), transparent 70%),
+    radial-gradient(30% 25% at 90% 80%, rgba(34, 197, 94, 0.14), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  pointer-events: none;
+}
+.gradient-mesh > * { position: relative; z-index: 1; }
 
 .btn-primary {
   background: var(--fg);
@@ -53,18 +87,20 @@ h1, h2, h3, h4 {
 .btn-primary:active { transform: scale(0.98); }
 
 .btn-ghost {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.6);
   color: var(--fg);
   border-radius: 980px;
   padding: 14px 28px;
   font-weight: 500;
   font-size: 15px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
   transition: background 0.2s;
 }
-.btn-ghost:hover { background: var(--bg-soft); }
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.85); }
 
-/* Visible, glanceable form inputs */
+/* Glanceable form inputs */
 .input-base {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.18);
@@ -93,7 +129,13 @@ h1, h2, h3, h4 {
   letter-spacing: -0.005em;
 }
 
-/* Number input — hide spinners for cleaner look */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 input[type="number"] { -moz-appearance: textfield; }
+
+/* Subtle reveal on scroll */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }

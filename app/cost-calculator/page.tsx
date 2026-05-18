@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { countries, citiesFor, computeCost, formatINR, type CostResult } from "@/lib/costs";
 import LeadModal from "@/components/LeadModal";
 import { generateCostReportPDF } from "@/lib/pdf";
+import { countryCover } from "@/lib/predictor";
 
 export default function CostCalculatorPage() {
   const countryOpts = useMemo(() => countries(), []);
@@ -36,92 +37,104 @@ export default function CostCalculatorPage() {
 
   function downloadPDF(info: { name: string; email: string; phone: string }) {
     if (!result) return;
-    generateCostReportPDF({ ...info, result });
+    generateCostReportPDF({ ...info, result, coverImage: countryCover(result.country) });
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
-      <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold">Study Abroad Cost Calculator</h1>
-        <p className="text-slate-600 mt-2 max-w-2xl">
-          Get an itemized cost in INR — tuition, living, visa, flights, insurance, miscellaneous — year-on-year, plus your monthly burn rate.
-        </p>
+    <div className="bg-white">
+      <div className="max-w-6xl mx-auto px-5 pt-20 pb-12">
+        <div className="text-center max-w-3xl mx-auto">
+          <p className="text-[15px] font-medium text-[#0071e3] mb-4">Cost Calculator</p>
+          <h1 className="title-display text-4xl md:text-6xl text-[#1d1d1f]">What it really costs.</h1>
+          <p className="mt-6 text-[18px] text-[#6e6e73] leading-relaxed">
+            Tuition, living, visa, flights, insurance. Year by year. In rupees. With your monthly burn rate.
+          </p>
+        </div>
+
+        <form onSubmit={onCompute} className="mt-12 rounded-3xl bg-[#f5f5f7] p-6 md:p-10 grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+          <Select label="Country" value={country} onChange={setCountry} options={countryOpts.map(c => ({ label: c, value: c }))} />
+          <Select label="City" value={city} onChange={setCity} options={cityOpts.map(c => ({ label: c, value: c }))} />
+          <Select label="Course type" value={courseType} onChange={(v) => setCourseType(v as "MS" | "MBA" | "UG")} options={[{ label: "MS", value: "MS" }, { label: "MBA", value: "MBA" }, { label: "UG", value: "UG" }]} />
+          <Input label="Duration (years)" value={durationYears} onChange={setDuration} min={1} max={5} step={1} />
+          <div className="md:col-span-2 flex flex-col sm:flex-row gap-3 mt-3 items-center">
+            <button type="submit" className="btn-primary w-full sm:w-auto">Calculate cost</button>
+            <p className="text-[13px] text-[#6e6e73]">2025–26 averages. Inflation factored at 5% / yr.</p>
+          </div>
+        </form>
       </div>
 
-      <form onSubmit={onCompute} className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 grid md:grid-cols-2 gap-4">
-        <Select label="Country" value={country} onChange={setCountry} options={countryOpts.map(c => ({ label: c, value: c }))} />
-        <Select label="City" value={city} onChange={setCity} options={cityOpts.map(c => ({ label: c, value: c }))} />
-        <Select label="Course type" value={courseType} onChange={(v) => setCourseType(v as "MS" | "MBA" | "UG")} options={[{ label: "MS", value: "MS" }, { label: "MBA", value: "MBA" }, { label: "UG", value: "UG" }]} />
-        <Input label="Duration (years)" value={durationYears} onChange={setDuration} min={1} max={5} step={1} />
-        <div className="md:col-span-2 flex flex-col sm:flex-row gap-3 mt-2">
-          <button type="submit" className="px-5 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
-            Calculate cost →
-          </button>
-          <p className="text-xs text-slate-500 self-center">Numbers reflect 2025–26 averages. Inflation factored at 5%/yr.</p>
-        </div>
-      </form>
-
       {result && (
-        <div id="results" className="mt-10">
-          <div className="grid md:grid-cols-4 gap-4">
-            <Stat label="Total estimated cost" value={formatINR(result.grandTotalINR)} accent="indigo" />
-            <Stat label="Monthly burn (living + insurance)" value={formatINR(result.monthlyBurnINR)} accent="violet" />
-            <Stat label="One-time (visa + flights)" value={formatINR(result.oneTimeINR)} accent="emerald" />
-            <Stat label="Annual recurring" value={formatINR(result.recurringAnnualINR)} accent="slate" />
-          </div>
-
-          <div className="mt-6 bg-white border border-slate-200 rounded-2xl overflow-hidden">
-            <div className="p-5 border-b border-slate-200">
-              <h2 className="font-bold text-lg">Year-by-year breakdown</h2>
-              <p className="text-xs text-slate-500">Tuition + living inflated at {result.inflationPctPerYear}% per year. Visa & double-flight in year 1 only.</p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-slate-50 text-slate-700">
-                  <tr>
-                    <Th>Year</Th><Th>Tuition</Th><Th>Living</Th><Th>Insurance</Th><Th>Misc</Th><Th>Visa</Th><Th>Flights</Th><Th>Total</Th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {result.years.map((y) => (
-                    <tr key={y.year} className="border-t border-slate-200">
-                      <Td className="font-semibold">Year {y.year}</Td>
-                      <Td>{formatINR(y.tuitionINR)}</Td>
-                      <Td>{formatINR(y.livingINR)}</Td>
-                      <Td>{formatINR(y.insuranceINR)}</Td>
-                      <Td>{formatINR(y.miscINR)}</Td>
-                      <Td>{formatINR(y.visaINR)}</Td>
-                      <Td>{formatINR(y.flightsINR)}</Td>
-                      <Td className="font-bold">{formatINR(y.totalINR)}</Td>
-                    </tr>
-                  ))}
-                  <tr className="border-t-2 border-slate-300 bg-slate-50">
-                    <Td className="font-bold">Total</Td>
-                    <Td colSpan={6}>{" "}</Td>
-                    <Td className="font-bold text-indigo-700">{formatINR(result.grandTotalINR)}</Td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="mt-10 rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-700 text-white p-6 md:p-8">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold">Get this report as PDF</h3>
-                <p className="text-indigo-100 mt-1 max-w-xl text-sm">
-                  Share with parents or sponsors. Includes the year-on-year split, notes on scholarships, and a counsellor follow-up. Free.
-                </p>
+        <div id="results" className="bg-[#f5f5f7] py-20">
+          <div className="max-w-6xl mx-auto px-5">
+            <div className="rounded-3xl overflow-hidden bg-white ring-1 ring-black/[0.06]">
+              <div className="relative h-44 md:h-56 overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={countryCover(result.country)} alt={result.country} className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <div className="text-[11px] uppercase tracking-widest opacity-80">{result.courseType} · {result.durationYears} {result.durationYears === 1 ? "year" : "years"}</div>
+                  <h2 className="title-display text-3xl md:text-5xl mt-1">{result.city}, {result.country}</h2>
+                </div>
               </div>
-              {unlockedLead ? (
-                <button onClick={() => downloadPDF(unlockedLead)} className="px-5 py-3 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-indigo-50">
-                  Download PDF again
-                </button>
-              ) : (
-                <button onClick={() => setModalOpen(true)} className="px-5 py-3 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-indigo-50">
-                  Email me the PDF
-                </button>
-              )}
+              <div className="grid md:grid-cols-4 gap-px bg-black/[0.06]">
+                <Stat label="Total estimated cost" value={formatINR(result.grandTotalINR)} highlight />
+                <Stat label="Monthly burn rate" value={formatINR(result.monthlyBurnINR)} />
+                <Stat label="One-time (visa + flights)" value={formatINR(result.oneTimeINR)} />
+                <Stat label="Annual recurring" value={formatINR(result.recurringAnnualINR)} />
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-3xl bg-white ring-1 ring-black/[0.06] overflow-hidden">
+              <div className="px-6 md:px-8 py-6 border-b border-black/[0.06]">
+                <h3 className="title-section text-xl md:text-2xl">Year-by-year breakdown</h3>
+                <p className="text-[13px] text-[#6e6e73] mt-1">Tuition and living inflated at {result.inflationPctPerYear}% per year. Visa and double flight in year 1 only.</p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-[14px]">
+                  <thead className="text-[#6e6e73] bg-[#f5f5f7]">
+                    <tr>
+                      <Th>Year</Th><Th>Tuition</Th><Th>Living</Th><Th>Insurance</Th><Th>Misc</Th><Th>Visa</Th><Th>Flights</Th><Th>Total</Th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {result.years.map((y) => (
+                      <tr key={y.year} className="border-t border-black/[0.06]">
+                        <Td className="font-medium">Year {y.year}</Td>
+                        <Td>{formatINR(y.tuitionINR)}</Td>
+                        <Td>{formatINR(y.livingINR)}</Td>
+                        <Td>{formatINR(y.insuranceINR)}</Td>
+                        <Td>{formatINR(y.miscINR)}</Td>
+                        <Td>{formatINR(y.visaINR)}</Td>
+                        <Td>{formatINR(y.flightsINR)}</Td>
+                        <Td className="font-semibold">{formatINR(y.totalINR)}</Td>
+                      </tr>
+                    ))}
+                    <tr className="border-t border-black/[0.12] bg-[#fafafa]">
+                      <Td className="font-semibold">Total</Td>
+                      <Td colSpan={6}>{" "}</Td>
+                      <Td className="font-semibold text-[#0071e3]">{formatINR(result.grandTotalINR)}</Td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mt-12 rounded-3xl bg-[#1d1d1f] text-white px-8 md:px-12 py-12 text-center">
+              <h3 className="title-section text-3xl md:text-4xl">Get this as a PDF</h3>
+              <p className="mt-4 text-[17px] text-white/70 max-w-xl mx-auto">
+                Share with parents or sponsors — clean, branded, ready to print. Free.
+              </p>
+              <div className="mt-8">
+                {unlockedLead ? (
+                  <button onClick={() => downloadPDF(unlockedLead)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                    Download PDF again
+                  </button>
+                ) : (
+                  <button onClick={() => setModalOpen(true)} className="inline-flex items-center bg-white text-black rounded-full px-7 py-3.5 font-medium text-[15px] hover:opacity-90">
+                    Email me the PDF
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -142,39 +155,31 @@ export default function CostCalculatorPage() {
   );
 }
 
-function Stat({ label, value, accent }: { label: string; value: string; accent: "indigo" | "violet" | "emerald" | "slate" }) {
-  const cls = {
-    indigo: "from-indigo-600 to-indigo-700",
-    violet: "from-violet-600 to-violet-700",
-    emerald: "from-emerald-600 to-emerald-700",
-    slate: "from-slate-700 to-slate-800",
-  }[accent];
+function Stat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className={`rounded-2xl bg-gradient-to-br ${cls} text-white p-5`}>
-      <div className="text-xs uppercase tracking-wider opacity-80">{label}</div>
-      <div className="text-2xl font-bold mt-1">{value}</div>
+    <div className={`bg-white px-6 py-5 ${highlight ? "" : ""}`}>
+      <div className="text-[11px] uppercase tracking-widest text-[#6e6e73] font-medium">{label}</div>
+      <div className={`mt-2 font-semibold tracking-tight ${highlight ? "text-2xl md:text-3xl text-[#0071e3]" : "text-xl md:text-2xl text-[#1d1d1f]"}`}>{value}</div>
     </div>
   );
 }
 
-function Th({ children }: { children: React.ReactNode }) { return <th className="text-left font-semibold px-4 py-3">{children}</th>; }
-function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) { return <td colSpan={colSpan} className={`px-4 py-3 ${className}`}>{children}</td>; }
+function Th({ children }: { children: React.ReactNode }) { return <th className="text-left font-medium text-[12px] uppercase tracking-widest px-5 py-3.5">{children}</th>; }
+function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) { return <td colSpan={colSpan} className={`px-5 py-4 ${className}`}>{children}</td>; }
 
 function Input({ label, value, onChange, min, max, step }: { label: string; value: number; onChange: (n: number) => void; min?: number; max?: number; step?: number }) {
   return (
     <label className="block">
-      <span className="text-sm font-medium text-slate-700">{label}</span>
-      <input type="number" value={value} min={min} max={max} step={step} onChange={(e) => onChange(Number(e.target.value))}
-        className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <span className="label-base">{label}</span>
+      <input type="number" value={value} min={min} max={max} step={step} onChange={(e) => onChange(Number(e.target.value))} className="input-base" />
     </label>
   );
 }
 function Select({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: { label: string; value: string }[] }) {
   return (
     <label className="block">
-      <span className="text-sm font-medium text-slate-700">{label}</span>
-      <select value={value} onChange={(e) => onChange(e.target.value)}
-        className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+      <span className="label-base">{label}</span>
+      <select value={value} onChange={(e) => onChange(e.target.value)} className="input-base bg-[#f5f5f7]">
         {options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
       </select>
     </label>

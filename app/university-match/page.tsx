@@ -59,7 +59,7 @@ export default function UniversityMatchPage() {
           <p className="text-[15px] font-medium text-[#0071e3] mb-4">Admit Predictor</p>
           <h1 className="title-display text-4xl md:text-6xl text-[#1d1d1f]">Where can you get in?</h1>
           <p className="mt-6 text-[18px] text-[#6e6e73] leading-relaxed">
-            Tell us about your profile. We&apos;ll rank 70+ universities into Ambitious, Target and Safe — with admit probability and a profile of each school.
+            Tell us about your profile. We&apos;ll rank 70+ universities into Ambitious, Target and Safe, with admit probability and a profile of each school.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function UniversityMatchPage() {
             </div>
 
             <div className="space-y-12">
-              <BucketRow title="Ambitious" subtitle="Reach schools — strong applications stand a chance." accent="#d6336c" matches={result.ambitious} />
+              <BucketRow title="Ambitious" subtitle="Reach schools. Strong applications stand a chance." accent="#d6336c" matches={result.ambitious} />
               <BucketRow title="Target" subtitle="A realistic match for your profile." accent="#0071e3" matches={result.target} />
               <BucketRow title="Safe" subtitle="High likelihood of an admit." accent="#1f8a3a" matches={result.safe} />
             </div>
@@ -142,7 +142,7 @@ function BucketRow({ title, subtitle, accent, matches }: { title: string; subtit
     return (
       <div>
         <BucketHeader title={title} subtitle={subtitle} accent={accent} />
-        <p className="text-[15px] text-[#6e6e73]">No universities in this bucket — try widening your country or program type.</p>
+        <p className="text-[15px] text-[#6e6e73]">No universities in this bucket. Try widening your country or program type.</p>
       </div>
     );
   }
@@ -171,28 +171,28 @@ function BucketHeader({ title, subtitle, accent }: { title: string; subtitle: st
 function MatchCard({ m }: { m: Match }) {
   const u = m.university;
   return (
-    <div className="rounded-2xl bg-white overflow-hidden ring-1 ring-black/[0.06] hover:ring-black/20 transition-all hover:-translate-y-0.5">
-      <div className="relative h-36 overflow-hidden">
+    <div className="rounded-2xl bg-white overflow-hidden ring-1 ring-black/[0.06] hover:ring-black/20 transition-all hover:-translate-y-0.5 flex flex-col">
+      <div className="relative h-40 overflow-hidden bg-[#1d1d1f]">
         {m.coverImage && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={m.coverImage} alt={u.country} className="absolute inset-0 w-full h-full object-cover" />
+          <img src={m.coverImage} alt={u.name} className="absolute inset-0 w-full h-full object-cover" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="absolute top-3 right-3 bg-white/95 backdrop-blur rounded-full px-2.5 py-1 text-[12px] font-semibold text-[#1d1d1f] tracking-tight">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+        <div className="absolute top-3 right-3 bg-white/95 backdrop-blur rounded-full px-3 py-1 text-[12px] font-semibold text-[#1d1d1f] tracking-tight">
           {m.probability}%
         </div>
         <div className="absolute bottom-3 left-4 right-4">
-          <div className="text-white text-[10px] uppercase tracking-widest opacity-80">{u.city}</div>
-          <h4 className="text-white text-[17px] font-semibold leading-tight tracking-tight">{u.name}</h4>
+          <div className="text-white text-[10px] uppercase tracking-[0.18em] opacity-90 font-medium">{u.city}</div>
+          <h4 className="text-white text-[17px] font-semibold leading-tight tracking-tight mt-0.5">{u.name}</h4>
         </div>
       </div>
-      <div className="p-5">
-        <div className="flex items-center gap-2 text-[12px] text-[#6e6e73] mb-3">
+      <div className="p-5 flex-1 flex flex-col">
+        <div className="flex items-center gap-1.5 text-[12px] text-[#6e6e73] mb-3">
           <span>{u.country}</span>
-          <span>·</span>
+          <span className="text-[#c7c7cc]">·</span>
           <span>Tier {u.tier}</span>
-          <span>·</span>
-          <span>{formatINR(u.annualTuitionINR)}/yr</span>
+          <span className="text-[#c7c7cc]">·</span>
+          <span>{formatINR(u.annualTuitionINR)} / yr</span>
         </div>
         <p className="text-[14px] text-[#1d1d1f]/85 leading-relaxed">{u.description}</p>
       </div>

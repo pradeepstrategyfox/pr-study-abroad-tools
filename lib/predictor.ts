@@ -12,6 +12,7 @@ export type University = {
   annualTuitionINR: number;
   popularPrograms: string[];
   description: string;
+  image?: string;
 };
 
 export type PredictorInputs = {
@@ -107,7 +108,7 @@ export function predict(inp: PredictorInputs): PredictionResult {
       university: u,
       probability,
       bucket,
-      coverImage: DATA.countryCovers[u.country] ?? "",
+      coverImage: u.image || DATA.countryCovers[u.country] || "",
     };
   });
 

@@ -122,7 +122,7 @@ export default function CostCalculatorPage() {
             <div className="mt-12 rounded-3xl bg-[#1d1d1f] text-white px-8 md:px-12 py-12 text-center">
               <h3 className="title-section text-3xl md:text-4xl">Get this as a PDF</h3>
               <p className="mt-4 text-[17px] text-white/70 max-w-xl mx-auto">
-                Share with parents or sponsors — clean, branded, ready to print. Free.
+                Share with parents or sponsors. Clean, branded, ready to print. Free.
               </p>
               <div className="mt-8">
                 {unlockedLead ? (

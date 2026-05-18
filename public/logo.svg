@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Dark blue P with integrated gold pen nib -->
+  <g>
+    <!-- P stem and bowl, drawn as strokes for that bold blue look -->
+    <path d="M48 30 L48 175" stroke="#1f2c87" stroke-width="22" stroke-linecap="square" />
+    <path d="M48 30 L120 30 Q170 30 170 75 Q170 120 120 120 L70 120" stroke="#1f2c87" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter" fill="none" />
+    <!-- Right leg of R -->
+    <path d="M108 122 L172 175" stroke="#1f2c87" stroke-width="22" stroke-linecap="square" />
+    <!-- Gold quill nib -->
+    <path d="M58 40 L36 95 L46 105 L72 50 Z" fill="#d4a73a" />
+    <path d="M46 105 L42 122 L52 118 L46 105 Z" fill="#d4a73a" />
+  </g>
+</svg>

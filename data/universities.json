@@ -8,76 +8,1174 @@
     "Ireland": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80"
   },
   "universities": [
-    { "name": "Massachusetts Institute of Technology", "shortName": "MIT", "country": "USA", "city": "Cambridge, MA", "tier": "T1", "minCGPA": 9.0, "minGRE": 330, "minIELTS": 7.5, "annualTuitionINR": 5500000, "popularPrograms": ["MS CS", "MS Data Science", "MBA"], "description": "Widely regarded as the world's top institution for engineering and computer science, with an unmatched research output and a strong startup culture. Notoriously selective — interviews and portfolio depth matter as much as test scores." },
-    { "name": "Stanford University", "shortName": "Stanford", "country": "USA", "city": "Stanford, CA", "tier": "T1", "minCGPA": 9.0, "minGRE": 328, "minIELTS": 7.5, "annualTuitionINR": 5800000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Silicon Valley's flagship university, deeply networked with the tech industry from founding-team to VC. Stanford GSB MBA and the MS CS programs are arguably the most coveted graduate paths in the world." },
-    { "name": "Harvard University", "shortName": "Harvard", "country": "USA", "city": "Cambridge, MA", "tier": "T1", "minCGPA": 9.2, "minGRE": 330, "minIELTS": 7.5, "annualTuitionINR": 5700000, "popularPrograms": ["MBA", "MS Public Policy", "UG"], "description": "America's oldest university and a global benchmark for liberal arts, law, business and public policy. Harvard Business School's case method and alumni network are unmatched for MBA aspirants." },
-    { "name": "Carnegie Mellon University", "shortName": "CMU", "country": "USA", "city": "Pittsburgh, PA", "tier": "T1", "minCGPA": 8.8, "minGRE": 325, "minIELTS": 7.0, "annualTuitionINR": 5200000, "popularPrograms": ["MS CS", "MS AI", "MS Robotics"], "description": "The benchmark for computer science, AI and robotics in the US — CMU's School of Computer Science is consistently ranked top-3 globally. Heavily project-based, with deep ties to Google, Apple and quantitative finance." },
-    { "name": "UC Berkeley", "shortName": "Berkeley", "country": "USA", "city": "Berkeley, CA", "tier": "T1", "minCGPA": 8.7, "minGRE": 325, "minIELTS": 7.0, "annualTuitionINR": 4800000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "The top public university in the US, known for rigorous CS and engineering programs and a strong research ecosystem. Bay Area location offers unmatched proximity to tech recruiting." },
-    { "name": "Columbia University", "shortName": "Columbia", "country": "USA", "city": "New York, NY", "tier": "T1", "minCGPA": 8.5, "minGRE": 322, "minIELTS": 7.0, "annualTuitionINR": 5400000, "popularPrograms": ["MS CS", "MBA", "MS Finance"], "description": "An Ivy League institution in the heart of Manhattan, particularly strong for finance, journalism, and applied data science. Easy access to Wall Street internships and a deep NYC alumni network." },
-    { "name": "Cornell University", "shortName": "Cornell", "country": "USA", "city": "Ithaca, NY", "tier": "T1", "minCGPA": 8.5, "minGRE": 322, "minIELTS": 7.0, "annualTuitionINR": 5200000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Ivy League with the most accessible STEM admissions of the group — particularly strong for engineering, hospitality and applied sciences. Also operates Cornell Tech, a graduate-only campus in NYC." },
-    { "name": "University of Michigan Ann Arbor", "shortName": "UMich", "country": "USA", "city": "Ann Arbor, MI", "tier": "T2", "minCGPA": 8.2, "minGRE": 318, "minIELTS": 7.0, "annualTuitionINR": 4500000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A top public research university with one of the largest and most active student bodies in the US. Ross School of Business and the College of Engineering both place exceptionally well into top-tier roles." },
-    { "name": "Georgia Tech", "shortName": "Georgia Tech", "country": "USA", "city": "Atlanta, GA", "tier": "T2", "minCGPA": 8.0, "minGRE": 318, "minIELTS": 7.0, "annualTuitionINR": 4000000, "popularPrograms": ["MS CS", "MS Analytics", "MS Engineering"], "description": "The strongest engineering-focused public university in the southern US, with renowned MS CS and OMS Analytics programs. Excellent value relative to tuition, with strong outcomes in core engineering and software roles." },
-    { "name": "UIUC", "shortName": "UIUC", "country": "USA", "city": "Urbana-Champaign, IL", "tier": "T2", "minCGPA": 8.0, "minGRE": 318, "minIELTS": 6.5, "annualTuitionINR": 4200000, "popularPrograms": ["MS CS", "MS ECE", "MS Engineering"], "description": "One of the most respected names in computer science and electrical engineering in the US — many of the founders behind YouTube, PayPal, Mosaic and Oracle studied here. Strong systems and AI research." },
-    { "name": "UT Austin", "shortName": "UT Austin", "country": "USA", "city": "Austin, TX", "tier": "T2", "minCGPA": 8.0, "minGRE": 318, "minIELTS": 6.5, "annualTuitionINR": 4000000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Top-ranked in CS and engineering with a rapidly growing tech ecosystem around it in Austin. McCombs MBA is highly regarded for energy, consulting and product management roles." },
-    { "name": "Purdue University", "shortName": "Purdue", "country": "USA", "city": "West Lafayette, IN", "tier": "T2", "minCGPA": 7.8, "minGRE": 315, "minIELTS": 6.5, "annualTuitionINR": 3500000, "popularPrograms": ["MS CS", "MS ECE", "MS Engineering"], "description": "A historic engineering powerhouse — Purdue alumni include the first and last astronauts to walk on the moon. Particularly strong for aerospace, ECE and core engineering disciplines, with a large Indian student community." },
-    { "name": "USC", "shortName": "USC", "country": "USA", "city": "Los Angeles, CA", "tier": "T2", "minCGPA": 7.8, "minGRE": 315, "minIELTS": 6.5, "annualTuitionINR": 4500000, "popularPrograms": ["MS CS", "MS Data Science", "MBA"], "description": "A private research university in LA with one of the largest engineering graduate programs in the country. The 'Trojan Network' alumni community is famously strong for career placement on the West Coast." },
-    { "name": "NYU", "shortName": "NYU", "country": "USA", "city": "New York, NY", "tier": "T2", "minCGPA": 7.8, "minGRE": 315, "minIELTS": 6.5, "annualTuitionINR": 4800000, "popularPrograms": ["MS CS", "MBA", "MS Finance"], "description": "A global urban university with NYC as its campus. Stern School of Business is a top finance MBA, and Courant Institute is excellent for applied math and quantitative finance." },
-    { "name": "Northeastern University", "shortName": "Northeastern", "country": "USA", "city": "Boston, MA", "tier": "T3", "minCGPA": 7.0, "minGRE": 305, "minIELTS": 6.5, "annualTuitionINR": 3800000, "popularPrograms": ["MS CS", "MS Data Science", "MS Engineering"], "description": "Famous for its co-op program — students alternate semesters of classes with full-time paid industry placements. Strong placement for Indian students into US tech, particularly in CS, analytics and information systems." },
-    { "name": "Arizona State University", "shortName": "ASU", "country": "USA", "city": "Tempe, AZ", "tier": "T3", "minCGPA": 6.8, "minGRE": 300, "minIELTS": 6.0, "annualTuitionINR": 2800000, "popularPrograms": ["MS CS", "MS Engineering", "MBA"], "description": "Ranked America's #1 most innovative university by US News for nine consecutive years. ASU's large MS programs are popular among Indian students for accessible admissions and strong post-study work outcomes." },
-    { "name": "SUNY Buffalo", "shortName": "UB", "country": "USA", "city": "Buffalo, NY", "tier": "T3", "minCGPA": 6.5, "minGRE": 300, "minIELTS": 6.0, "annualTuitionINR": 2500000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "The flagship campus of the State University of New York system — affordable tuition and solid academics make it a popular choice for cost-conscious Indian MS applicants. Strong programs in CS and biomedical engineering." },
-    { "name": "University of Texas Dallas", "shortName": "UT Dallas", "country": "USA", "city": "Dallas, TX", "tier": "T3", "minCGPA": 6.8, "minGRE": 300, "minIELTS": 6.0, "annualTuitionINR": 2600000, "popularPrograms": ["MS CS", "MS Business Analytics"], "description": "Known for its business analytics and computer science programs, and for relatively merit-friendly scholarship awards. The DFW metro is one of the fastest-growing US job markets, especially for tech and finance." },
-    { "name": "George Mason University", "shortName": "GMU", "country": "USA", "city": "Fairfax, VA", "tier": "T3", "minCGPA": 6.5, "minGRE": 295, "minIELTS": 6.0, "annualTuitionINR": 2400000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "A growing public university just outside Washington DC, with notable programs in cybersecurity and software engineering. Proximity to major federal contractors creates strong CPT/OPT opportunities." },
-    { "name": "Stevens Institute of Technology", "shortName": "Stevens", "country": "USA", "city": "Hoboken, NJ", "tier": "T3", "minCGPA": 6.5, "minGRE": 300, "minIELTS": 6.5, "annualTuitionINR": 3200000, "popularPrograms": ["MS CS", "MS Engineering", "MS Finance"], "description": "A small private STEM-focused institute across the Hudson from Manhattan, with strong financial engineering and applied AI programs. Career outcomes for MS students are among the best in its tier." },
-
-    { "name": "University of Oxford", "shortName": "Oxford", "country": "UK", "city": "Oxford", "tier": "T1", "minCGPA": 8.8, "minGRE": 0, "minIELTS": 7.5, "annualTuitionINR": 4200000, "popularPrograms": ["MS CS", "MBA", "UG"], "description": "One of the oldest universities in the English-speaking world, structured around its iconic colleges and tutorial system. The MSc programs are intensive one-year courses with global brand recognition." },
-    { "name": "University of Cambridge", "shortName": "Cambridge", "country": "UK", "city": "Cambridge", "tier": "T1", "minCGPA": 8.8, "minGRE": 0, "minIELTS": 7.5, "annualTuitionINR": 4200000, "popularPrograms": ["MS CS", "MBA", "UG"], "description": "Oxford's historical peer and a global powerhouse in mathematics, computer science and engineering. The MPhil programs are research-leaning and ideal for students intending to continue into a PhD." },
-    { "name": "Imperial College London", "shortName": "Imperial", "country": "UK", "city": "London", "tier": "T1", "minCGPA": 8.5, "minGRE": 0, "minIELTS": 7.0, "annualTuitionINR": 3800000, "popularPrograms": ["MS CS", "MS Engineering", "MBA"], "description": "The UK's top science and engineering university, located in central London and consistently ranked top-10 globally for STEM. Heavy industry collaboration and a London-based alumni network." },
-    { "name": "London School of Economics", "shortName": "LSE", "country": "UK", "city": "London", "tier": "T1", "minCGPA": 8.5, "minGRE": 0, "minIELTS": 7.0, "annualTuitionINR": 3500000, "popularPrograms": ["MS Finance", "MS Economics", "MBA"], "description": "The world's leading specialist social-science university — economics, finance, public policy and law are its flagship strengths. Direct recruiting pipelines into investment banks, consultancies and policy roles in London." },
-    { "name": "UCL", "shortName": "UCL", "country": "UK", "city": "London", "tier": "T1", "minCGPA": 8.2, "minGRE": 0, "minIELTS": 7.0, "annualTuitionINR": 3400000, "popularPrograms": ["MS CS", "MS Engineering", "MS Data Science"], "description": "A large multidisciplinary research university in central London with particular strength in computer science, AI (via DeepMind ties) and engineering. Among the most international universities in the UK." },
-    { "name": "King's College London", "shortName": "King's College", "country": "UK", "city": "London", "tier": "T2", "minCGPA": 7.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 3000000, "popularPrograms": ["MS CS", "MS Finance", "MBA"], "description": "A research-intensive Russell Group university in the heart of London, especially strong for finance, public policy, health and law. The brand is well-known to global employers." },
-    { "name": "University of Edinburgh", "shortName": "Edinburgh", "country": "UK", "city": "Edinburgh", "tier": "T2", "minCGPA": 7.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2800000, "popularPrograms": ["MS CS", "MS Data Science", "MBA"], "description": "Scotland's flagship university, with world-leading AI and informatics research dating back to the 1960s. A beautiful historic campus and significantly lower cost of living than London." },
-    { "name": "University of Manchester", "shortName": "Manchester", "country": "UK", "city": "Manchester", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2600000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A Russell Group university and one of the largest in the UK — known for engineering, materials science and business. Manchester itself has emerged as a major UK tech and finance hub outside London." },
-    { "name": "University of Warwick", "shortName": "Warwick", "country": "UK", "city": "Coventry", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2800000, "popularPrograms": ["MS CS", "MBA", "MS Finance"], "description": "Founded in the 1960s but already a top-10 UK university, especially strong in business (WBS), economics, and computer science. Quietly excellent placement record into consulting and IB roles." },
-    { "name": "University of Bristol", "shortName": "Bristol", "country": "UK", "city": "Bristol", "tier": "T2", "minCGPA": 6.8, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2500000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "A research-led Russell Group university with notable strengths in engineering, computer science and aerospace. Bristol is one of the most liveable UK cities, with a growing tech and aerospace cluster." },
-    { "name": "University of Glasgow", "shortName": "Glasgow", "country": "UK", "city": "Glasgow", "tier": "T3", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2400000, "popularPrograms": ["MS CS", "MS Engineering", "MBA"], "description": "Scotland's second oldest university with a strong reputation for engineering, computer science and business. Lower cost of living than London and a popular destination for cost-aware Indian MS applicants." },
-    { "name": "University of Leeds", "shortName": "Leeds", "country": "UK", "city": "Leeds", "tier": "T3", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2300000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A large Russell Group university in northern England — popular for taught Master's in business, data analytics and engineering. Strong industry partnerships and an affordable student city." },
-    { "name": "University of Sheffield", "shortName": "Sheffield", "country": "UK", "city": "Sheffield", "tier": "T3", "minCGPA": 6.0, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 2200000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "A Russell Group university known particularly for engineering and materials science, with an Advanced Manufacturing Research Centre linked to Boeing, Rolls-Royce and others." },
-    { "name": "Coventry University", "shortName": "Coventry", "country": "UK", "city": "Coventry", "tier": "T3", "minCGPA": 5.5, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 1800000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A modern, career-focused university with friendly admission standards and strong industry links — particularly in automotive engineering. A common, accessible UK option for Indian Master's applicants." },
-    { "name": "University of Hertfordshire", "shortName": "Hertfordshire", "country": "UK", "city": "Hatfield", "tier": "T3", "minCGPA": 5.5, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 1700000, "popularPrograms": ["MS CS", "MBA"], "description": "Located just outside London with a more accessible profile cutoff. Strong industry-oriented programs in computer science, business and aerospace engineering." },
-
-    { "name": "University of Toronto", "shortName": "U of T", "country": "Canada", "city": "Toronto, ON", "tier": "T1", "minCGPA": 8.5, "minGRE": 320, "minIELTS": 7.0, "annualTuitionINR": 3500000, "popularPrograms": ["MS CS", "MBA", "UG"], "description": "Canada's top-ranked university and one of the most research-intensive globally. Toronto's growing tech and AI ecosystem (Vector Institute, Geoffrey Hinton's home base) gives CS graduates strong local opportunities." },
-    { "name": "University of British Columbia", "shortName": "UBC", "country": "Canada", "city": "Vancouver, BC", "tier": "T1", "minCGPA": 8.2, "minGRE": 318, "minIELTS": 6.5, "annualTuitionINR": 3200000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A consistently top-3 Canadian university with a beautiful Pacific-coast campus. Sauder MBA and CS programs are well-regarded; Vancouver itself is a growing tech hub anchored by Amazon, Microsoft and Shopify." },
-    { "name": "McGill University", "shortName": "McGill", "country": "Canada", "city": "Montreal, QC", "tier": "T1", "minCGPA": 8.2, "minGRE": 318, "minIELTS": 6.5, "annualTuitionINR": 2800000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Often described as the 'Harvard of Canada' — historic, internationally diverse, and academically rigorous. Montreal offers a vibrant student culture at a noticeably lower cost than Toronto or Vancouver." },
-    { "name": "University of Waterloo", "shortName": "Waterloo", "country": "Canada", "city": "Waterloo, ON", "tier": "T1", "minCGPA": 8.5, "minGRE": 320, "minIELTS": 7.0, "annualTuitionINR": 3000000, "popularPrograms": ["MS CS", "MS Engineering", "MS Data Science"], "description": "Canada's leading engineering and computer science university, known for its mandatory co-op program that places students at Google, Apple, Tesla and major Wall Street firms. The 'Canadian MIT' for tech." },
-    { "name": "University of Alberta", "shortName": "Alberta", "country": "Canada", "city": "Edmonton, AB", "tier": "T2", "minCGPA": 7.5, "minGRE": 310, "minIELTS": 6.5, "annualTuitionINR": 2200000, "popularPrograms": ["MS CS", "MS Engineering", "MBA"], "description": "A top-tier Canadian research university particularly strong in AI/reinforcement learning (DeepMind's Alberta lab) and energy engineering. Affordable cost of living and good post-study work options." },
-    { "name": "McMaster University", "shortName": "McMaster", "country": "Canada", "city": "Hamilton, ON", "tier": "T2", "minCGPA": 7.5, "minGRE": 310, "minIELTS": 6.5, "annualTuitionINR": 2400000, "popularPrograms": ["MS CS", "MS Engineering", "MBA"], "description": "Known for its problem-based learning approach and exceptional research in health sciences and engineering. Located close to Toronto with significantly lower living costs." },
-    { "name": "Queen's University", "shortName": "Queen's", "country": "Canada", "city": "Kingston, ON", "tier": "T2", "minCGPA": 7.5, "minGRE": 310, "minIELTS": 6.5, "annualTuitionINR": 2500000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "An elite Canadian university with a strong tradition in engineering and business — Smith School of Business is consistently ranked among Canada's top MBA programs." },
-    { "name": "York University", "shortName": "York", "country": "Canada", "city": "Toronto, ON", "tier": "T3", "minCGPA": 6.5, "minGRE": 300, "minIELTS": 6.5, "annualTuitionINR": 2000000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Canada's third-largest university, located in north Toronto. Schulich School of Business is internationally recognised and Lassonde School of Engineering is rapidly building a strong reputation." },
-    { "name": "Concordia University", "shortName": "Concordia", "country": "Canada", "city": "Montreal, QC", "tier": "T3", "minCGPA": 6.5, "minGRE": 300, "minIELTS": 6.5, "annualTuitionINR": 1800000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "An urban research university in downtown Montreal with strong programs in software engineering and applied AI. Affordable Quebec tuition rates and quality of life make it a value pick." },
-    { "name": "Ryerson / Toronto Metropolitan", "shortName": "TMU", "country": "Canada", "city": "Toronto, ON", "tier": "T3", "minCGPA": 6.0, "minGRE": 295, "minIELTS": 6.0, "annualTuitionINR": 1700000, "popularPrograms": ["MS CS", "MBA"], "description": "A career-focused public university right in downtown Toronto, with a reputation for innovation and applied learning. Especially strong for media, business and computer science programs." },
-
-    { "name": "University of Melbourne", "shortName": "Melbourne", "country": "Australia", "city": "Melbourne", "tier": "T1", "minCGPA": 8.2, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 3200000, "popularPrograms": ["MS CS", "MBA", "UG"], "description": "Australia's top-ranked university, consistently a global top-40 institution. Melbourne Business School and the Faculty of Engineering are particularly highly regarded internationally." },
-    { "name": "Australian National University", "shortName": "ANU", "country": "Australia", "city": "Canberra", "tier": "T1", "minCGPA": 8.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 3000000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Australia's national research university, based in Canberra with close ties to government, defence and public-policy organisations. Strong in computer science, physics and international relations." },
-    { "name": "University of Sydney", "shortName": "USyd", "country": "Australia", "city": "Sydney", "tier": "T1", "minCGPA": 8.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 3100000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Australia's oldest university, with a historic sandstone campus in central Sydney. Particularly strong in business, engineering and health sciences, and a top destination for Indian Master's students." },
-    { "name": "UNSW Sydney", "shortName": "UNSW", "country": "Australia", "city": "Sydney", "tier": "T1", "minCGPA": 7.8, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2900000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Considered Australia's strongest engineering and tech university, with extensive industry partnerships. The accelerated trimester model lets students complete a Master's faster than peers." },
-    { "name": "Monash University", "shortName": "Monash", "country": "Australia", "city": "Melbourne", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2600000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "One of Australia's largest universities, with strong professional programs in IT, engineering, pharmacy and business. Internationally diverse with major Indian and Southeast Asian student communities." },
-    { "name": "University of Queensland", "shortName": "UQ", "country": "Australia", "city": "Brisbane", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2500000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "A top-tier 'Group of Eight' research university located in Brisbane — strong reputation in biotechnology, engineering and information technology. Lower cost of living than Sydney or Melbourne." },
-    { "name": "University of Adelaide", "shortName": "Adelaide", "country": "Australia", "city": "Adelaide", "tier": "T3", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2200000, "popularPrograms": ["MS CS", "MBA"], "description": "A Group of Eight member with strong programs in wine, agriculture, defence research and computer science. Adelaide offers a calmer, more affordable lifestyle than the larger Australian cities." },
-    { "name": "Deakin University", "shortName": "Deakin", "country": "Australia", "city": "Melbourne / Geelong", "tier": "T3", "minCGPA": 6.0, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 1900000, "popularPrograms": ["MS CS", "MBA"], "description": "A practical, employability-focused university with multiple campuses around Victoria. Popular among Indian students for accessible admissions and strong placement support for cybersecurity and IT roles." },
-    { "name": "RMIT University", "shortName": "RMIT", "country": "Australia", "city": "Melbourne", "tier": "T3", "minCGPA": 6.0, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 2000000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Australia's largest dual-sector university, with a strong reputation in technology, design and engineering. Heart-of-Melbourne campus and tight industry integration through internships." },
-
-    { "name": "TU Munich", "shortName": "TUM", "country": "Germany", "city": "Munich", "tier": "T1", "minCGPA": 8.0, "minGRE": 315, "minIELTS": 6.5, "annualTuitionINR": 250000, "popularPrograms": ["MS CS", "MS Engineering", "MS Data Science"], "description": "Germany's top technical university and one of Europe's best engineering schools — near-zero tuition makes it exceptional value. Strong industry pipelines to BMW, Siemens, Audi and Munich's growing AI cluster." },
-    { "name": "RWTH Aachen", "shortName": "RWTH Aachen", "country": "Germany", "city": "Aachen", "tier": "T1", "minCGPA": 7.8, "minGRE": 310, "minIELTS": 6.5, "annualTuitionINR": 200000, "popularPrograms": ["MS Engineering", "MS CS"], "description": "One of Germany's most prestigious technical universities, particularly strong for mechanical, automotive and electrical engineering. Excellent connections to the German auto industry." },
-    { "name": "TU Berlin", "shortName": "TU Berlin", "country": "Germany", "city": "Berlin", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 150000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "A leading technical university located in Europe's fastest-growing startup hub. Berlin's tech ecosystem, low cost of living and minimal tuition make it an excellent value choice." },
-    { "name": "University of Stuttgart", "shortName": "Stuttgart", "country": "Germany", "city": "Stuttgart", "tier": "T2", "minCGPA": 7.0, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 150000, "popularPrograms": ["MS Engineering", "MS CS"], "description": "An engineering powerhouse located in the heart of Germany's automotive industry — home to Mercedes-Benz, Porsche and Bosch. Strong specialisations in automotive and aerospace engineering." },
-    { "name": "Heidelberg University", "shortName": "Heidelberg", "country": "Germany", "city": "Heidelberg", "tier": "T2", "minCGPA": 7.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 200000, "popularPrograms": ["MS CS", "MS Data Science"], "description": "Germany's oldest university, founded in 1386 — globally recognised for research in life sciences, physics and computer science. Picturesque town with strong research collaborations." },
-    { "name": "TU Darmstadt", "shortName": "TU Darmstadt", "country": "Germany", "city": "Darmstadt", "tier": "T3", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 150000, "popularPrograms": ["MS CS", "MS Engineering"], "description": "A leading technical university with notable strengths in cybersecurity, AI and electrical engineering. Close ties to Frankfurt's financial sector and the wider German tech industry." },
-    { "name": "University of Freiburg", "shortName": "Freiburg", "country": "Germany", "city": "Freiburg", "tier": "T3", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 200000, "popularPrograms": ["MS CS"], "description": "A historic German research university located in the picturesque Black Forest region. Strong in microsystems engineering and applied AI, with high quality of life and low costs." },
-
-    { "name": "Trinity College Dublin", "shortName": "Trinity", "country": "Ireland", "city": "Dublin", "tier": "T1", "minCGPA": 7.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2600000, "popularPrograms": ["MS CS", "MBA", "MS Data Science"], "description": "Ireland's most prestigious university, founded in 1592 in central Dublin. Globally recognised for computer science and data analytics, with Dublin itself a hub for Google, Meta and major tech firms." },
-    { "name": "University College Dublin", "shortName": "UCD", "country": "Ireland", "city": "Dublin", "tier": "T1", "minCGPA": 7.2, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2400000, "popularPrograms": ["MS CS", "MBA", "MS Engineering"], "description": "Ireland's largest university, with the Michael Smurfit Graduate Business School ranked among Europe's top MBA programs. Strong in CS, data analytics and finance, with excellent post-study work options." },
-    { "name": "National University of Ireland Galway", "shortName": "NUI Galway", "country": "Ireland", "city": "Galway", "tier": "T2", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 2000000, "popularPrograms": ["MS CS", "MS Data Science"], "description": "A top Irish university located on the country's west coast. Particularly known for data analytics, biomedical engineering and digital arts — and a notably welcoming student city." },
-    { "name": "Dublin City University", "shortName": "DCU", "country": "Ireland", "city": "Dublin", "tier": "T2", "minCGPA": 6.5, "minGRE": 0, "minIELTS": 6.5, "annualTuitionINR": 1900000, "popularPrograms": ["MS CS", "MBA"], "description": "A modern Dublin-based university with strong industry partnerships, particularly in IT, fintech and aerospace. Many programs include integrated internship semesters." },
-    { "name": "University of Limerick", "shortName": "UL", "country": "Ireland", "city": "Limerick", "tier": "T3", "minCGPA": 6.0, "minGRE": 0, "minIELTS": 6.0, "annualTuitionINR": 1700000, "popularPrograms": ["MS CS", "MBA"], "description": "A practical, employability-focused Irish university known for its mandatory co-op program and modern campus. Strong programs in software engineering, AI and business analytics." }
+    {
+      "name": "Massachusetts Institute of Technology",
+      "shortName": "MIT",
+      "country": "USA",
+      "city": "Cambridge, MA",
+      "tier": "T1",
+      "minCGPA": 9,
+      "minGRE": 330,
+      "minIELTS": 7.5,
+      "annualTuitionINR": 5500000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science",
+        "MBA"
+      ],
+      "description": "Widely regarded as the world's top institution for engineering and computer science, with an unmatched research output and a strong startup culture. Notoriously selective, interviews and portfolio depth matter as much as test scores.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_Main_Campus_Aerial.jpg/1280px-MIT_Main_Campus_Aerial.jpg"
+    },
+    {
+      "name": "Stanford University",
+      "shortName": "Stanford",
+      "country": "USA",
+      "city": "Stanford, CA",
+      "tier": "T1",
+      "minCGPA": 9,
+      "minGRE": 328,
+      "minIELTS": 7.5,
+      "annualTuitionINR": 5800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Silicon Valley's flagship university, deeply networked with the tech industry from founding-team to VC. Stanford GSB MBA and the MS CS programs are arguably the most coveted graduate paths in the world.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Stanford_University_campus_from_above.jpg/1280px-Stanford_University_campus_from_above.jpg"
+    },
+    {
+      "name": "Harvard University",
+      "shortName": "Harvard",
+      "country": "USA",
+      "city": "Cambridge, MA",
+      "tier": "T1",
+      "minCGPA": 9.2,
+      "minGRE": 330,
+      "minIELTS": 7.5,
+      "annualTuitionINR": 5700000,
+      "popularPrograms": [
+        "MBA",
+        "MS Public Policy",
+        "UG"
+      ],
+      "description": "America's oldest university and a global benchmark for liberal arts, law, business and public policy. Harvard Business School's case method and alumni network are unmatched for MBA aspirants.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Harvard_yard_winter_2009j.JPG/1280px-Harvard_yard_winter_2009j.JPG"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "shortName": "CMU",
+      "country": "USA",
+      "city": "Pittsburgh, PA",
+      "tier": "T1",
+      "minCGPA": 8.8,
+      "minGRE": 325,
+      "minIELTS": 7,
+      "annualTuitionINR": 5200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS AI",
+        "MS Robotics"
+      ],
+      "description": "The benchmark for computer science, AI and robotics in the US, CMU's School of Computer Science is consistently ranked top-3 globally. Heavily project-based, with deep ties to Google, Apple and quantitative finance.",
+      "image": "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "UC Berkeley",
+      "shortName": "Berkeley",
+      "country": "USA",
+      "city": "Berkeley, CA",
+      "tier": "T1",
+      "minCGPA": 8.7,
+      "minGRE": 325,
+      "minIELTS": 7,
+      "annualTuitionINR": 4800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "The top public university in the US, known for rigorous CS and engineering programs and a strong research ecosystem. Bay Area location offers unmatched proximity to tech recruiting.",
+      "image": "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Columbia University",
+      "shortName": "Columbia",
+      "country": "USA",
+      "city": "New York, NY",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 322,
+      "minIELTS": 7,
+      "annualTuitionINR": 5400000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Finance"
+      ],
+      "description": "An Ivy League institution in the heart of Manhattan, particularly strong for finance, journalism, and applied data science. Easy access to Wall Street internships and a deep NYC alumni network.",
+      "image": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Cornell University",
+      "shortName": "Cornell",
+      "country": "USA",
+      "city": "Ithaca, NY",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 322,
+      "minIELTS": 7,
+      "annualTuitionINR": 5200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Ivy League with the most accessible STEM admissions of the group, particularly strong for engineering, hospitality and applied sciences. Also operates Cornell Tech, a graduate-only campus in NYC.",
+      "image": "https://images.unsplash.com/photo-1532649538693-f3a2ec1bf8bd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Michigan Ann Arbor",
+      "shortName": "UMich",
+      "country": "USA",
+      "city": "Ann Arbor, MI",
+      "tier": "T2",
+      "minCGPA": 8.2,
+      "minGRE": 318,
+      "minIELTS": 7,
+      "annualTuitionINR": 4500000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A top public research university with one of the largest and most active student bodies in the US. Ross School of Business and the College of Engineering both place exceptionally well into top-tier roles.",
+      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Georgia Tech",
+      "shortName": "Georgia Tech",
+      "country": "USA",
+      "city": "Atlanta, GA",
+      "tier": "T2",
+      "minCGPA": 8,
+      "minGRE": 318,
+      "minIELTS": 7,
+      "annualTuitionINR": 4000000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Analytics",
+        "MS Engineering"
+      ],
+      "description": "The strongest engineering-focused public university in the southern US, with renowned MS CS and OMS Analytics programs. Excellent value relative to tuition, with strong outcomes in core engineering and software roles.",
+      "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "UIUC",
+      "shortName": "UIUC",
+      "country": "USA",
+      "city": "Urbana-Champaign, IL",
+      "tier": "T2",
+      "minCGPA": 8,
+      "minGRE": 318,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 4200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS ECE",
+        "MS Engineering"
+      ],
+      "description": "One of the most respected names in computer science and electrical engineering in the US, many of the founders behind YouTube, PayPal, Mosaic and Oracle studied here. Strong systems and AI research.",
+      "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "UT Austin",
+      "shortName": "UT Austin",
+      "country": "USA",
+      "city": "Austin, TX",
+      "tier": "T2",
+      "minCGPA": 8,
+      "minGRE": 318,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 4000000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Top-ranked in CS and engineering with a rapidly growing tech ecosystem around it in Austin. McCombs MBA is highly regarded for energy, consulting and product management roles.",
+      "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Purdue University",
+      "shortName": "Purdue",
+      "country": "USA",
+      "city": "West Lafayette, IN",
+      "tier": "T2",
+      "minCGPA": 7.8,
+      "minGRE": 315,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3500000,
+      "popularPrograms": [
+        "MS CS",
+        "MS ECE",
+        "MS Engineering"
+      ],
+      "description": "A historic engineering powerhouse, Purdue alumni include the first and last astronauts to walk on the moon. Particularly strong for aerospace, ECE and core engineering disciplines, with a large Indian student community.",
+      "image": "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "USC",
+      "shortName": "USC",
+      "country": "USA",
+      "city": "Los Angeles, CA",
+      "tier": "T2",
+      "minCGPA": 7.8,
+      "minGRE": 315,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 4500000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science",
+        "MBA"
+      ],
+      "description": "A private research university in LA with one of the largest engineering graduate programs in the country. The 'Trojan Network' alumni community is famously strong for career placement on the West Coast.",
+      "image": "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "NYU",
+      "shortName": "NYU",
+      "country": "USA",
+      "city": "New York, NY",
+      "tier": "T2",
+      "minCGPA": 7.8,
+      "minGRE": 315,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 4800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Finance"
+      ],
+      "description": "A global urban university with NYC as its campus. Stern School of Business is a top finance MBA, and Courant Institute is excellent for applied math and quantitative finance.",
+      "image": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Northeastern University",
+      "shortName": "Northeastern",
+      "country": "USA",
+      "city": "Boston, MA",
+      "tier": "T3",
+      "minCGPA": 7,
+      "minGRE": 305,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3800000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science",
+        "MS Engineering"
+      ],
+      "description": "Famous for its co-op program, students alternate semesters of classes with full-time paid industry placements. Strong placement for Indian students into US tech, particularly in CS, analytics and information systems.",
+      "image": "https://images.unsplash.com/photo-1532649538693-f3a2ec1bf8bd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Arizona State University",
+      "shortName": "ASU",
+      "country": "USA",
+      "city": "Tempe, AZ",
+      "tier": "T3",
+      "minCGPA": 6.8,
+      "minGRE": 300,
+      "minIELTS": 6,
+      "annualTuitionINR": 2800000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MBA"
+      ],
+      "description": "Ranked America's #1 most innovative university by US News for nine consecutive years. ASU's large MS programs are popular among Indian students for accessible admissions and strong post-study work outcomes.",
+      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "SUNY Buffalo",
+      "shortName": "UB",
+      "country": "USA",
+      "city": "Buffalo, NY",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 300,
+      "minIELTS": 6,
+      "annualTuitionINR": 2500000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "The flagship campus of the State University of New York system, affordable tuition and solid academics make it a popular choice for cost-conscious Indian MS applicants. Strong programs in CS and biomedical engineering.",
+      "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Texas Dallas",
+      "shortName": "UT Dallas",
+      "country": "USA",
+      "city": "Dallas, TX",
+      "tier": "T3",
+      "minCGPA": 6.8,
+      "minGRE": 300,
+      "minIELTS": 6,
+      "annualTuitionINR": 2600000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Business Analytics"
+      ],
+      "description": "Known for its business analytics and computer science programs, and for relatively merit-friendly scholarship awards. The DFW metro is one of the fastest-growing US job markets, especially for tech and finance.",
+      "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "George Mason University",
+      "shortName": "GMU",
+      "country": "USA",
+      "city": "Fairfax, VA",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 295,
+      "minIELTS": 6,
+      "annualTuitionINR": 2400000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "A growing public university just outside Washington DC, with notable programs in cybersecurity and software engineering. Proximity to major federal contractors creates strong CPT/OPT opportunities.",
+      "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Stevens Institute of Technology",
+      "shortName": "Stevens",
+      "country": "USA",
+      "city": "Hoboken, NJ",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 300,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MS Finance"
+      ],
+      "description": "A small private STEM-focused institute across the Hudson from Manhattan, with strong financial engineering and applied AI programs. Career outcomes for MS students are among the best in its tier.",
+      "image": "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Oxford",
+      "shortName": "Oxford",
+      "country": "UK",
+      "city": "Oxford",
+      "tier": "T1",
+      "minCGPA": 8.8,
+      "minGRE": 0,
+      "minIELTS": 7.5,
+      "annualTuitionINR": 4200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "UG"
+      ],
+      "description": "One of the oldest universities in the English-speaking world, structured around its iconic colleges and tutorial system. The MSc programs are intensive one-year courses with global brand recognition.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Oxford_-_Christ_Church_-_geograph.org.uk_-_1607264.jpg/1280px-Oxford_-_Christ_Church_-_geograph.org.uk_-_1607264.jpg"
+    },
+    {
+      "name": "University of Cambridge",
+      "shortName": "Cambridge",
+      "country": "UK",
+      "city": "Cambridge",
+      "tier": "T1",
+      "minCGPA": 8.8,
+      "minGRE": 0,
+      "minIELTS": 7.5,
+      "annualTuitionINR": 4200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "UG"
+      ],
+      "description": "Oxford's historical peer and a global powerhouse in mathematics, computer science and engineering. The MPhil programs are research-leaning and ideal for students intending to continue into a PhD.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/KingsCollegeChapelWest.jpg/1280px-KingsCollegeChapelWest.jpg"
+    },
+    {
+      "name": "Imperial College London",
+      "shortName": "Imperial",
+      "country": "UK",
+      "city": "London",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 0,
+      "minIELTS": 7,
+      "annualTuitionINR": 3800000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MBA"
+      ],
+      "description": "The UK's top science and engineering university, located in central London and consistently ranked top-10 globally for STEM. Heavy industry collaboration and a London-based alumni network.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Imperial_College_London_Queens_Tower.jpg/1280px-Imperial_College_London_Queens_Tower.jpg"
+    },
+    {
+      "name": "London School of Economics",
+      "shortName": "LSE",
+      "country": "UK",
+      "city": "London",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 0,
+      "minIELTS": 7,
+      "annualTuitionINR": 3500000,
+      "popularPrograms": [
+        "MS Finance",
+        "MS Economics",
+        "MBA"
+      ],
+      "description": "The world's leading specialist social-science university, economics, finance, public policy and law are its flagship strengths. Direct recruiting pipelines into investment banks, consultancies and policy roles in London.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bridge_at_the_London_School_of_Economics.jpg/1280px-Bridge_at_the_London_School_of_Economics.jpg"
+    },
+    {
+      "name": "UCL",
+      "shortName": "UCL",
+      "country": "UK",
+      "city": "London",
+      "tier": "T1",
+      "minCGPA": 8.2,
+      "minGRE": 0,
+      "minIELTS": 7,
+      "annualTuitionINR": 3400000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MS Data Science"
+      ],
+      "description": "A large multidisciplinary research university in central London with particular strength in computer science, AI (via DeepMind ties) and engineering. Among the most international universities in the UK.",
+      "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "King's College London",
+      "shortName": "King's College",
+      "country": "UK",
+      "city": "London",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3000000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Finance",
+        "MBA"
+      ],
+      "description": "A research-intensive Russell Group university in the heart of London, especially strong for finance, public policy, health and law. The brand is well-known to global employers.",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Edinburgh",
+      "shortName": "Edinburgh",
+      "country": "UK",
+      "city": "Edinburgh",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2800000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science",
+        "MBA"
+      ],
+      "description": "Scotland's flagship university, with world-leading AI and informatics research dating back to the 1960s. A beautiful historic campus and significantly lower cost of living than London.",
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Manchester",
+      "shortName": "Manchester",
+      "country": "UK",
+      "city": "Manchester",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2600000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A Russell Group university and one of the largest in the UK, known for engineering, materials science and business. Manchester itself has emerged as a major UK tech and finance hub outside London.",
+      "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Warwick",
+      "shortName": "Warwick",
+      "country": "UK",
+      "city": "Coventry",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Finance"
+      ],
+      "description": "Founded in the 1960s but already a top-10 UK university, especially strong in business (WBS), economics, and computer science. Quietly excellent placement record into consulting and IB roles.",
+      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Bristol",
+      "shortName": "Bristol",
+      "country": "UK",
+      "city": "Bristol",
+      "tier": "T2",
+      "minCGPA": 6.8,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2500000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "A research-led Russell Group university with notable strengths in engineering, computer science and aerospace. Bristol is one of the most liveable UK cities, with a growing tech and aerospace cluster.",
+      "image": "https://images.unsplash.com/photo-1544006659-f0b21884ce1d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Glasgow",
+      "shortName": "Glasgow",
+      "country": "UK",
+      "city": "Glasgow",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2400000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MBA"
+      ],
+      "description": "Scotland's second oldest university with a strong reputation for engineering, computer science and business. Lower cost of living than London and a popular destination for cost-aware Indian MS applicants.",
+      "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Leeds",
+      "shortName": "Leeds",
+      "country": "UK",
+      "city": "Leeds",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2300000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A large Russell Group university in northern England, popular for taught Master's in business, data analytics and engineering. Strong industry partnerships and an affordable student city.",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Sheffield",
+      "shortName": "Sheffield",
+      "country": "UK",
+      "city": "Sheffield",
+      "tier": "T3",
+      "minCGPA": 6,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 2200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "A Russell Group university known particularly for engineering and materials science, with an Advanced Manufacturing Research Centre linked to Boeing, Rolls-Royce and others.",
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Coventry University",
+      "shortName": "Coventry",
+      "country": "UK",
+      "city": "Coventry",
+      "tier": "T3",
+      "minCGPA": 5.5,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 1800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A modern, career-focused university with friendly admission standards and strong industry links, particularly in automotive engineering. A common, accessible UK option for Indian Master's applicants.",
+      "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Hertfordshire",
+      "shortName": "Hertfordshire",
+      "country": "UK",
+      "city": "Hatfield",
+      "tier": "T3",
+      "minCGPA": 5.5,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 1700000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "Located just outside London with a more accessible profile cutoff. Strong industry-oriented programs in computer science, business and aerospace engineering.",
+      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Toronto",
+      "shortName": "U of T",
+      "country": "Canada",
+      "city": "Toronto, ON",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 320,
+      "minIELTS": 7,
+      "annualTuitionINR": 3500000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "UG"
+      ],
+      "description": "Canada's top-ranked university and one of the most research-intensive globally. Toronto's growing tech and AI ecosystem (Vector Institute, Geoffrey Hinton's home base) gives CS graduates strong local opportunities.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Convocation_Hall_University_of_Toronto.jpg/1280px-Convocation_Hall_University_of_Toronto.jpg"
+    },
+    {
+      "name": "University of British Columbia",
+      "shortName": "UBC",
+      "country": "Canada",
+      "city": "Vancouver, BC",
+      "tier": "T1",
+      "minCGPA": 8.2,
+      "minGRE": 318,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A consistently top-3 Canadian university with a beautiful Pacific-coast campus. Sauder MBA and CS programs are well-regarded; Vancouver itself is a growing tech hub anchored by Amazon, Microsoft and Shopify.",
+      "image": "https://images.unsplash.com/photo-1559682468-a6a29e7d9517?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "McGill University",
+      "shortName": "McGill",
+      "country": "Canada",
+      "city": "Montreal, QC",
+      "tier": "T1",
+      "minCGPA": 8.2,
+      "minGRE": 318,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Often described as the 'Harvard of Canada', historic, internationally diverse, and academically rigorous. Montreal offers a vibrant student culture at a noticeably lower cost than Toronto or Vancouver.",
+      "image": "https://images.unsplash.com/photo-1465153690352-10c1b29577f8?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Waterloo",
+      "shortName": "Waterloo",
+      "country": "Canada",
+      "city": "Waterloo, ON",
+      "tier": "T1",
+      "minCGPA": 8.5,
+      "minGRE": 320,
+      "minIELTS": 7,
+      "annualTuitionINR": 3000000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MS Data Science"
+      ],
+      "description": "Canada's leading engineering and computer science university, known for its mandatory co-op program that places students at Google, Apple, Tesla and major Wall Street firms. The 'Canadian MIT' for tech.",
+      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Alberta",
+      "shortName": "Alberta",
+      "country": "Canada",
+      "city": "Edmonton, AB",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 310,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MBA"
+      ],
+      "description": "A top-tier Canadian research university particularly strong in AI/reinforcement learning (DeepMind's Alberta lab) and energy engineering. Affordable cost of living and good post-study work options.",
+      "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "McMaster University",
+      "shortName": "McMaster",
+      "country": "Canada",
+      "city": "Hamilton, ON",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 310,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2400000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MBA"
+      ],
+      "description": "Known for its problem-based learning approach and exceptional research in health sciences and engineering. Located close to Toronto with significantly lower living costs.",
+      "image": "https://images.unsplash.com/photo-1465311530779-5241f5a29892?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Queen's University",
+      "shortName": "Queen's",
+      "country": "Canada",
+      "city": "Kingston, ON",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 310,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2500000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "An elite Canadian university with a strong tradition in engineering and business, Smith School of Business is consistently ranked among Canada's top MBA programs.",
+      "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "York University",
+      "shortName": "York",
+      "country": "Canada",
+      "city": "Toronto, ON",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 300,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2000000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Canada's third-largest university, located in north Toronto. Schulich School of Business is internationally recognised and Lassonde School of Engineering is rapidly building a strong reputation.",
+      "image": "https://images.unsplash.com/photo-1559682468-a6a29e7d9517?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Concordia University",
+      "shortName": "Concordia",
+      "country": "Canada",
+      "city": "Montreal, QC",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 300,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 1800000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "An urban research university in downtown Montreal with strong programs in software engineering and applied AI. Affordable Quebec tuition rates and quality of life make it a value pick.",
+      "image": "https://images.unsplash.com/photo-1465153690352-10c1b29577f8?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Ryerson / Toronto Metropolitan",
+      "shortName": "TMU",
+      "country": "Canada",
+      "city": "Toronto, ON",
+      "tier": "T3",
+      "minCGPA": 6,
+      "minGRE": 295,
+      "minIELTS": 6,
+      "annualTuitionINR": 1700000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "A career-focused public university right in downtown Toronto, with a reputation for innovation and applied learning. Especially strong for media, business and computer science programs.",
+      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Melbourne",
+      "shortName": "Melbourne",
+      "country": "Australia",
+      "city": "Melbourne",
+      "tier": "T1",
+      "minCGPA": 8.2,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "UG"
+      ],
+      "description": "Australia's top-ranked university, consistently a global top-40 institution. Melbourne Business School and the Faculty of Engineering are particularly highly regarded internationally.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/University_of_Melbourne_Architecture_Building.jpg/1280px-University_of_Melbourne_Architecture_Building.jpg"
+    },
+    {
+      "name": "Australian National University",
+      "shortName": "ANU",
+      "country": "Australia",
+      "city": "Canberra",
+      "tier": "T1",
+      "minCGPA": 8,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3000000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Australia's national research university, based in Canberra with close ties to government, defence and public-policy organisations. Strong in computer science, physics and international relations.",
+      "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Sydney",
+      "shortName": "USyd",
+      "country": "Australia",
+      "city": "Sydney",
+      "tier": "T1",
+      "minCGPA": 8,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 3100000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Australia's oldest university, with a historic sandstone campus in central Sydney. Particularly strong in business, engineering and health sciences, and a top destination for Indian Master's students.",
+      "image": "https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "UNSW Sydney",
+      "shortName": "UNSW",
+      "country": "Australia",
+      "city": "Sydney",
+      "tier": "T1",
+      "minCGPA": 7.8,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2900000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Considered Australia's strongest engineering and tech university, with extensive industry partnerships. The accelerated trimester model lets students complete a Master's faster than peers.",
+      "image": "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Monash University",
+      "shortName": "Monash",
+      "country": "Australia",
+      "city": "Melbourne",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2600000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "One of Australia's largest universities, with strong professional programs in IT, engineering, pharmacy and business. Internationally diverse with major Indian and Southeast Asian student communities.",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Queensland",
+      "shortName": "UQ",
+      "country": "Australia",
+      "city": "Brisbane",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2500000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "A top-tier 'Group of Eight' research university located in Brisbane, strong reputation in biotechnology, engineering and information technology. Lower cost of living than Sydney or Melbourne.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Adelaide",
+      "shortName": "Adelaide",
+      "country": "Australia",
+      "city": "Adelaide",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2200000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "A Group of Eight member with strong programs in wine, agriculture, defence research and computer science. Adelaide offers a calmer, more affordable lifestyle than the larger Australian cities.",
+      "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Deakin University",
+      "shortName": "Deakin",
+      "country": "Australia",
+      "city": "Melbourne / Geelong",
+      "tier": "T3",
+      "minCGPA": 6,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 1900000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "A practical, employability-focused university with multiple campuses around Victoria. Popular among Indian students for accessible admissions and strong placement support for cybersecurity and IT roles.",
+      "image": "https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "RMIT University",
+      "shortName": "RMIT",
+      "country": "Australia",
+      "city": "Melbourne",
+      "tier": "T3",
+      "minCGPA": 6,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 2000000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Australia's largest dual-sector university, with a strong reputation in technology, design and engineering. Heart-of-Melbourne campus and tight industry integration through internships.",
+      "image": "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "TU Munich",
+      "shortName": "TUM",
+      "country": "Germany",
+      "city": "Munich",
+      "tier": "T1",
+      "minCGPA": 8,
+      "minGRE": 315,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 250000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering",
+        "MS Data Science"
+      ],
+      "description": "Germany's top technical university and one of Europe's best engineering schools, near-zero tuition makes it exceptional value. Strong industry pipelines to BMW, Siemens, Audi and Munich's growing AI cluster.",
+      "image": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "RWTH Aachen",
+      "shortName": "RWTH Aachen",
+      "country": "Germany",
+      "city": "Aachen",
+      "tier": "T1",
+      "minCGPA": 7.8,
+      "minGRE": 310,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 200000,
+      "popularPrograms": [
+        "MS Engineering",
+        "MS CS"
+      ],
+      "description": "One of Germany's most prestigious technical universities, particularly strong for mechanical, automotive and electrical engineering. Excellent connections to the German auto industry.",
+      "image": "https://images.unsplash.com/photo-1554072675-66db59dba46f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "TU Berlin",
+      "shortName": "TU Berlin",
+      "country": "Germany",
+      "city": "Berlin",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 150000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "A leading technical university located in Europe's fastest-growing startup hub. Berlin's tech ecosystem, low cost of living and minimal tuition make it an excellent value choice.",
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Stuttgart",
+      "shortName": "Stuttgart",
+      "country": "Germany",
+      "city": "Stuttgart",
+      "tier": "T2",
+      "minCGPA": 7,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 150000,
+      "popularPrograms": [
+        "MS Engineering",
+        "MS CS"
+      ],
+      "description": "An engineering powerhouse located in the heart of Germany's automotive industry, home to Mercedes-Benz, Porsche and Bosch. Strong specialisations in automotive and aerospace engineering.",
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Heidelberg University",
+      "shortName": "Heidelberg",
+      "country": "Germany",
+      "city": "Heidelberg",
+      "tier": "T2",
+      "minCGPA": 7.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 200000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science"
+      ],
+      "description": "Germany's oldest university, founded in 1386, globally recognised for research in life sciences, physics and computer science. Picturesque town with strong research collaborations.",
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "TU Darmstadt",
+      "shortName": "TU Darmstadt",
+      "country": "Germany",
+      "city": "Darmstadt",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 150000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Engineering"
+      ],
+      "description": "A leading technical university with notable strengths in cybersecurity, AI and electrical engineering. Close ties to Frankfurt's financial sector and the wider German tech industry.",
+      "image": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Freiburg",
+      "shortName": "Freiburg",
+      "country": "Germany",
+      "city": "Freiburg",
+      "tier": "T3",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 200000,
+      "popularPrograms": [
+        "MS CS"
+      ],
+      "description": "A historic German research university located in the picturesque Black Forest region. Strong in microsystems engineering and applied AI, with high quality of life and low costs.",
+      "image": "https://images.unsplash.com/photo-1554072675-66db59dba46f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Trinity College Dublin",
+      "shortName": "Trinity",
+      "country": "Ireland",
+      "city": "Dublin",
+      "tier": "T1",
+      "minCGPA": 7.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2600000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Data Science"
+      ],
+      "description": "Ireland's most prestigious university, founded in 1592 in central Dublin. Globally recognised for computer science and data analytics, with Dublin itself a hub for Google, Meta and major tech firms.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/The_entrance_of_the_historic_Trinity_College_%28Unsplash%29.jpg/1280px-The_entrance_of_the_historic_Trinity_College_%28Unsplash%29.jpg"
+    },
+    {
+      "name": "University College Dublin",
+      "shortName": "UCD",
+      "country": "Ireland",
+      "city": "Dublin",
+      "tier": "T1",
+      "minCGPA": 7.2,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2400000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA",
+        "MS Engineering"
+      ],
+      "description": "Ireland's largest university, with the Michael Smurfit Graduate Business School ranked among Europe's top MBA programs. Strong in CS, data analytics and finance, with excellent post-study work options.",
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "National University of Ireland Galway",
+      "shortName": "NUI Galway",
+      "country": "Ireland",
+      "city": "Galway",
+      "tier": "T2",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 2000000,
+      "popularPrograms": [
+        "MS CS",
+        "MS Data Science"
+      ],
+      "description": "A top Irish university located on the country's west coast. Particularly known for data analytics, biomedical engineering and digital arts, and a notably welcoming student city.",
+      "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "Dublin City University",
+      "shortName": "DCU",
+      "country": "Ireland",
+      "city": "Dublin",
+      "tier": "T2",
+      "minCGPA": 6.5,
+      "minGRE": 0,
+      "minIELTS": 6.5,
+      "annualTuitionINR": 1900000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "A modern Dublin-based university with strong industry partnerships, particularly in IT, fintech and aerospace. Many programs include integrated internship semesters.",
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "name": "University of Limerick",
+      "shortName": "UL",
+      "country": "Ireland",
+      "city": "Limerick",
+      "tier": "T3",
+      "minCGPA": 6,
+      "minGRE": 0,
+      "minIELTS": 6,
+      "annualTuitionINR": 1700000,
+      "popularPrograms": [
+        "MS CS",
+        "MBA"
+      ],
+      "description": "A practical, employability-focused Irish university known for its mandatory co-op program and modern campus. Strong programs in software engineering, AI and business analytics.",
+      "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80"
+    }
   ]
 }

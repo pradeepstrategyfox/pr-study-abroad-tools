@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { predict, countryList, type PredictionResult, type Match } from "@/lib/predictor";
+import { predict, countryList, countryCover, type PredictionResult, type Match } from "@/lib/predictor";
 import { formatINR } from "@/lib/costs";
 import LeadModal from "@/components/LeadModal";
+import CoverImage from "@/components/CoverImage";
 import { generateUniversityMatchPDF } from "@/lib/pdf";
 
 const PROGRAMS: Array<"MS" | "MBA" | "UG"> = ["MS", "MBA", "UG"];
@@ -173,11 +174,13 @@ function MatchCard({ m }: { m: Match }) {
   const u = m.university;
   return (
     <div className="rounded-2xl bg-white overflow-hidden ring-1 ring-black/[0.06] hover:ring-black/20 transition-all hover:-translate-y-0.5 flex flex-col">
-      <div className="relative h-40 overflow-hidden bg-[#1d1d1f]">
-        {m.coverImage && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={m.coverImage} alt={u.name} className="absolute inset-0 w-full h-full object-cover" />
-        )}
+      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-[#1d1d1f] to-[#3a3a3c]">
+        <CoverImage
+          primary={u.image}
+          fallback={countryCover(u.country)}
+          alt={u.name}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
         <div className="absolute top-3 right-3 bg-white/95 backdrop-blur rounded-full px-3 py-1 text-[12px] font-semibold text-[#1d1d1f] tracking-tight">
           {m.probability}%

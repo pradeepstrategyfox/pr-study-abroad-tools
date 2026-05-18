@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { countries, citiesFor, computeCost, formatINR, type CostResult } from "@/lib/costs";
 import LeadModal from "@/components/LeadModal";
+import CoverImage from "@/components/CoverImage";
 import { generateCostReportPDF } from "@/lib/pdf";
 import { countryCover } from "@/lib/predictor";
 
@@ -67,9 +68,12 @@ export default function CostCalculatorPage() {
         <div id="results" className="bg-[#f5f5f7] py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-5">
             <div className="rounded-2xl md:rounded-3xl overflow-hidden bg-white ring-1 ring-black/[0.06]">
-              <div className="relative h-36 sm:h-44 md:h-56 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={countryCover(result.country)} alt={result.country} className="absolute inset-0 w-full h-full object-cover" />
+              <div className="relative h-36 sm:h-44 md:h-56 overflow-hidden bg-gradient-to-br from-[#1d1d1f] to-[#3a3a3c]">
+                <CoverImage
+                  primary={countryCover(result.country)}
+                  alt={result.country}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 <div className="absolute bottom-5 md:bottom-6 left-5 md:left-6 right-5 md:right-6 text-white">
                   <div className="text-[10px] md:text-[11px] uppercase tracking-widest opacity-80">{result.courseType} · {result.durationYears} {result.durationYears === 1 ? "year" : "years"}</div>

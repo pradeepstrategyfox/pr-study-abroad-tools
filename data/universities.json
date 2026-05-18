@@ -23,7 +23,7 @@
         "UG"
       ],
       "description": "One of the oldest universities in the English-speaking world, structured around its iconic colleges and tutorial system. The MSc programs are intensive one-year courses with global brand recognition.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Oxford_-_Christ_Church_-_geograph.org.uk_-_1607264.jpg/1280px-Oxford_-_Christ_Church_-_geograph.org.uk_-_1607264.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/1_christ_church_hall_2012.jpg/1280px-1_christ_church_hall_2012.jpg"
     },
     {
       "name": "University of Cambridge",
@@ -41,7 +41,7 @@
         "UG"
       ],
       "description": "Oxford's historical peer and a global powerhouse in mathematics, computer science and engineering. The MPhil programs are research-leaning and ideal for students intending to continue into a PhD.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/KingsCollegeChapelWest.jpg/1280px-KingsCollegeChapelWest.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/20130808_Castle_End_from_Kings_Bridge.jpg/1280px-20130808_Castle_End_from_Kings_Bridge.jpg"
     },
     {
       "name": "Imperial College London",
@@ -59,7 +59,7 @@
         "MBA"
       ],
       "description": "The UK's top science and engineering university, located in central London and consistently ranked top-10 globally for STEM. Heavy industry collaboration and a London-based alumni network.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Imperial_College_London_Queens_Tower.jpg/1280px-Imperial_College_London_Queens_Tower.jpg"
+      "image": ""
     },
     {
       "name": "London School of Economics",
@@ -77,7 +77,7 @@
         "MBA"
       ],
       "description": "The world's leading specialist social-science university, economics, finance, public policy and law are its flagship strengths. Direct recruiting pipelines into investment banks, consultancies and policy roles in London.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bridge_at_the_London_School_of_Economics.jpg/1280px-Bridge_at_the_London_School_of_Economics.jpg"
+      "image": ""
     },
     {
       "name": "UCL",
@@ -95,7 +95,7 @@
         "MS Data Science"
       ],
       "description": "A large multidisciplinary research university in central London with particular strength in computer science, AI (via DeepMind ties) and engineering. Among the most international universities in the UK.",
-      "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "King's College London",
@@ -113,7 +113,7 @@
         "MBA"
       ],
       "description": "A research-intensive Russell Group university in the heart of London, especially strong for finance, public policy, health and law. The brand is well-known to global employers.",
-      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Edinburgh",
@@ -131,7 +131,7 @@
         "MBA"
       ],
       "description": "Scotland's flagship university, with world-leading AI and informatics research dating back to the 1960s. A beautiful historic campus and significantly lower cost of living than London.",
-      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Manchester",
@@ -149,7 +149,7 @@
         "MS Engineering"
       ],
       "description": "A Russell Group university and one of the largest in the UK, known for engineering, materials science and business. Manchester itself has emerged as a major UK tech and finance hub outside London.",
-      "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Warwick",
@@ -167,7 +167,7 @@
         "MS Finance"
       ],
       "description": "Founded in the 1960s but already a top-10 UK university, especially strong in business (WBS), economics, and computer science. Quietly excellent placement record into consulting and IB roles.",
-      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Bristol",
@@ -184,7 +184,7 @@
         "MS Engineering"
       ],
       "description": "A research-led Russell Group university with notable strengths in engineering, computer science and aerospace. Bristol is one of the most liveable UK cities, with a growing tech and aerospace cluster.",
-      "image": "https://images.unsplash.com/photo-1544006659-f0b21884ce1d?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Glasgow",
@@ -202,7 +202,7 @@
         "MBA"
       ],
       "description": "Scotland's second oldest university with a strong reputation for engineering, computer science and business. Lower cost of living than London and a popular destination for cost-aware Indian MS applicants.",
-      "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Leeds",
@@ -220,7 +220,7 @@
         "MS Engineering"
       ],
       "description": "A large Russell Group university in northern England, popular for taught Master's in business, data analytics and engineering. Strong industry partnerships and an affordable student city.",
-      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Sheffield",
@@ -237,7 +237,7 @@
         "MS Engineering"
       ],
       "description": "A Russell Group university known particularly for engineering and materials science, with an Advanced Manufacturing Research Centre linked to Boeing, Rolls-Royce and others.",
-      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Coventry University",
@@ -255,7 +255,7 @@
         "MS Engineering"
       ],
       "description": "A modern, career-focused university with friendly admission standards and strong industry links, particularly in automotive engineering. A common, accessible UK option for Indian Master's applicants.",
-      "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Hertfordshire",
@@ -272,7 +272,7 @@
         "MBA"
       ],
       "description": "Located just outside London with a more accessible profile cutoff. Strong industry-oriented programs in computer science, business and aerospace engineering.",
-      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Toronto",
@@ -290,7 +290,7 @@
         "UG"
       ],
       "description": "Canada's top-ranked university and one of the most research-intensive globally. Toronto's growing tech and AI ecosystem (Vector Institute, Geoffrey Hinton's home base) gives CS graduates strong local opportunities.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Convocation_Hall_University_of_Toronto.jpg/1280px-Convocation_Hall_University_of_Toronto.jpg"
+      "image": ""
     },
     {
       "name": "University of British Columbia",
@@ -308,7 +308,7 @@
         "MS Engineering"
       ],
       "description": "A consistently top-3 Canadian university with a beautiful Pacific-coast campus. Sauder MBA and CS programs are well-regarded; Vancouver itself is a growing tech hub anchored by Amazon, Microsoft and Shopify.",
-      "image": "https://images.unsplash.com/photo-1559682468-a6a29e7d9517?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "McGill University",
@@ -326,7 +326,7 @@
         "MS Engineering"
       ],
       "description": "Often described as the 'Harvard of Canada', historic, internationally diverse, and academically rigorous. Montreal offers a vibrant student culture at a noticeably lower cost than Toronto or Vancouver.",
-      "image": "https://images.unsplash.com/photo-1465153690352-10c1b29577f8?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mcgill_Building1.jpg/1280px-Mcgill_Building1.jpg"
     },
     {
       "name": "University of Waterloo",
@@ -344,7 +344,7 @@
         "MS Data Science"
       ],
       "description": "Canada's leading engineering and computer science university, known for its mandatory co-op program that places students at Google, Apple, Tesla and major Wall Street firms. The 'Canadian MIT' for tech.",
-      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Alberta",
@@ -362,7 +362,7 @@
         "MBA"
       ],
       "description": "A top-tier Canadian research university particularly strong in AI/reinforcement learning (DeepMind's Alberta lab) and energy engineering. Affordable cost of living and good post-study work options.",
-      "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "McMaster University",
@@ -380,7 +380,7 @@
         "MBA"
       ],
       "description": "Known for its problem-based learning approach and exceptional research in health sciences and engineering. Located close to Toronto with significantly lower living costs.",
-      "image": "https://images.unsplash.com/photo-1465311530779-5241f5a29892?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Queen's University",
@@ -398,7 +398,7 @@
         "MS Engineering"
       ],
       "description": "An elite Canadian university with a strong tradition in engineering and business, Smith School of Business is consistently ranked among Canada's top MBA programs.",
-      "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "York University",
@@ -416,7 +416,7 @@
         "MS Engineering"
       ],
       "description": "Canada's third-largest university, located in north Toronto. Schulich School of Business is internationally recognised and Lassonde School of Engineering is rapidly building a strong reputation.",
-      "image": "https://images.unsplash.com/photo-1559682468-a6a29e7d9517?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Concordia University",
@@ -434,7 +434,7 @@
         "MS Engineering"
       ],
       "description": "An urban research university in downtown Montreal with strong programs in software engineering and applied AI. Affordable Quebec tuition rates and quality of life make it a value pick.",
-      "image": "https://images.unsplash.com/photo-1465153690352-10c1b29577f8?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Ryerson / Toronto Metropolitan",
@@ -451,7 +451,7 @@
         "MBA"
       ],
       "description": "A career-focused public university right in downtown Toronto, with a reputation for innovation and applied learning. Especially strong for media, business and computer science programs.",
-      "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Melbourne",
@@ -469,7 +469,7 @@
         "UG"
       ],
       "description": "Australia's top-ranked university, consistently a global top-40 institution. Melbourne Business School and the Faculty of Engineering are particularly highly regarded internationally.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/University_of_Melbourne_Architecture_Building.jpg/1280px-University_of_Melbourne_Architecture_Building.jpg"
+      "image": ""
     },
     {
       "name": "Australian National University",
@@ -487,7 +487,7 @@
         "MS Engineering"
       ],
       "description": "Australia's national research university, based in Canberra with close ties to government, defence and public-policy organisations. Strong in computer science, physics and international relations.",
-      "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Sydney",
@@ -505,7 +505,7 @@
         "MS Engineering"
       ],
       "description": "Australia's oldest university, with a historic sandstone campus in central Sydney. Particularly strong in business, engineering and health sciences, and a top destination for Indian Master's students.",
-      "image": "https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "UNSW Sydney",
@@ -523,7 +523,7 @@
         "MS Engineering"
       ],
       "description": "Considered Australia's strongest engineering and tech university, with extensive industry partnerships. The accelerated trimester model lets students complete a Master's faster than peers.",
-      "image": "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Monash University",
@@ -541,7 +541,7 @@
         "MS Engineering"
       ],
       "description": "One of Australia's largest universities, with strong professional programs in IT, engineering, pharmacy and business. Internationally diverse with major Indian and Southeast Asian student communities.",
-      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Queensland",
@@ -559,7 +559,7 @@
         "MS Engineering"
       ],
       "description": "A top-tier 'Group of Eight' research university located in Brisbane, strong reputation in biotechnology, engineering and information technology. Lower cost of living than Sydney or Melbourne.",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Adelaide",
@@ -576,7 +576,7 @@
         "MBA"
       ],
       "description": "A Group of Eight member with strong programs in wine, agriculture, defence research and computer science. Adelaide offers a calmer, more affordable lifestyle than the larger Australian cities.",
-      "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Deakin University",
@@ -593,7 +593,7 @@
         "MBA"
       ],
       "description": "A practical, employability-focused university with multiple campuses around Victoria. Popular among Indian students for accessible admissions and strong placement support for cybersecurity and IT roles.",
-      "image": "https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "RMIT University",
@@ -611,7 +611,7 @@
         "MS Engineering"
       ],
       "description": "Australia's largest dual-sector university, with a strong reputation in technology, design and engineering. Heart-of-Melbourne campus and tight industry integration through internships.",
-      "image": "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "TU Munich",
@@ -629,7 +629,7 @@
         "MS Data Science"
       ],
       "description": "Germany's top technical university and one of Europe's best engineering schools, near-zero tuition makes it exceptional value. Strong industry pipelines to BMW, Siemens, Audi and Munich's growing AI cluster.",
-      "image": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "RWTH Aachen",
@@ -646,7 +646,7 @@
         "MS CS"
       ],
       "description": "One of Germany's most prestigious technical universities, particularly strong for mechanical, automotive and electrical engineering. Excellent connections to the German auto industry.",
-      "image": "https://images.unsplash.com/photo-1554072675-66db59dba46f?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "TU Berlin",
@@ -663,7 +663,7 @@
         "MS Engineering"
       ],
       "description": "A leading technical university located in Europe's fastest-growing startup hub. Berlin's tech ecosystem, low cost of living and minimal tuition make it an excellent value choice.",
-      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Stuttgart",
@@ -680,7 +680,7 @@
         "MS CS"
       ],
       "description": "An engineering powerhouse located in the heart of Germany's automotive industry, home to Mercedes-Benz, Porsche and Bosch. Strong specialisations in automotive and aerospace engineering.",
-      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Heidelberg University",
@@ -697,7 +697,7 @@
         "MS Data Science"
       ],
       "description": "Germany's oldest university, founded in 1386, globally recognised for research in life sciences, physics and computer science. Picturesque town with strong research collaborations.",
-      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "TU Darmstadt",
@@ -714,7 +714,7 @@
         "MS Engineering"
       ],
       "description": "A leading technical university with notable strengths in cybersecurity, AI and electrical engineering. Close ties to Frankfurt's financial sector and the wider German tech industry.",
-      "image": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Freiburg",
@@ -730,7 +730,7 @@
         "MS CS"
       ],
       "description": "A historic German research university located in the picturesque Black Forest region. Strong in microsystems engineering and applied AI, with high quality of life and low costs.",
-      "image": "https://images.unsplash.com/photo-1554072675-66db59dba46f?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Trinity College Dublin",
@@ -748,7 +748,7 @@
         "MS Data Science"
       ],
       "description": "Ireland's most prestigious university, founded in 1592 in central Dublin. Globally recognised for computer science and data analytics, with Dublin itself a hub for Google, Meta and major tech firms.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/The_entrance_of_the_historic_Trinity_College_%28Unsplash%29.jpg/1280px-The_entrance_of_the_historic_Trinity_College_%28Unsplash%29.jpg"
+      "image": ""
     },
     {
       "name": "University College Dublin",
@@ -766,7 +766,7 @@
         "MS Engineering"
       ],
       "description": "Ireland's largest university, with the Michael Smurfit Graduate Business School ranked among Europe's top MBA programs. Strong in CS, data analytics and finance, with excellent post-study work options.",
-      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "National University of Ireland Galway",
@@ -783,7 +783,7 @@
         "MS Data Science"
       ],
       "description": "A top Irish university located on the country's west coast. Particularly known for data analytics, biomedical engineering and digital arts, and a notably welcoming student city.",
-      "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "Dublin City University",
@@ -800,7 +800,7 @@
         "MBA"
       ],
       "description": "A modern Dublin-based university with strong industry partnerships, particularly in IT, fintech and aerospace. Many programs include integrated internship semesters.",
-      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     },
     {
       "name": "University of Limerick",
@@ -817,7 +817,7 @@
         "MBA"
       ],
       "description": "A practical, employability-focused Irish university known for its mandatory co-op program and modern campus. Strong programs in software engineering, AI and business analytics.",
-      "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80"
+      "image": ""
     }
   ]
 }

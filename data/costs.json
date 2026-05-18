@@ -1,0 +1,116 @@
+{
+  "countries": {
+    "USA": {
+      "currency": "USD",
+      "rateINR": 84,
+      "visaINR": 32000,
+      "flightOneWayINR": 75000,
+      "healthInsuranceAnnualINR": 180000,
+      "miscAnnualINR": 100000,
+      "tuition": { "MS": 3500000, "MBA": 6500000, "UG": 4500000 },
+      "cities": {
+        "New York": { "livingMonthlyINR": 220000 },
+        "San Francisco / Bay Area": { "livingMonthlyINR": 240000 },
+        "Boston": { "livingMonthlyINR": 190000 },
+        "Chicago": { "livingMonthlyINR": 150000 },
+        "Los Angeles": { "livingMonthlyINR": 180000 },
+        "Seattle": { "livingMonthlyINR": 180000 },
+        "Austin": { "livingMonthlyINR": 140000 },
+        "Atlanta": { "livingMonthlyINR": 120000 },
+        "Pittsburgh": { "livingMonthlyINR": 110000 },
+        "Tempe / Phoenix": { "livingMonthlyINR": 100000 },
+        "Dallas": { "livingMonthlyINR": 120000 },
+        "Buffalo": { "livingMonthlyINR": 90000 }
+      }
+    },
+    "UK": {
+      "currency": "GBP",
+      "rateINR": 107,
+      "visaINR": 50000,
+      "flightOneWayINR": 60000,
+      "healthInsuranceAnnualINR": 70000,
+      "miscAnnualINR": 90000,
+      "tuition": { "MS": 2800000, "MBA": 5500000, "UG": 3000000 },
+      "cities": {
+        "London": { "livingMonthlyINR": 160000 },
+        "Manchester": { "livingMonthlyINR": 100000 },
+        "Edinburgh": { "livingMonthlyINR": 110000 },
+        "Birmingham": { "livingMonthlyINR": 95000 },
+        "Glasgow": { "livingMonthlyINR": 90000 },
+        "Leeds": { "livingMonthlyINR": 90000 },
+        "Bristol": { "livingMonthlyINR": 110000 },
+        "Coventry": { "livingMonthlyINR": 85000 },
+        "Sheffield": { "livingMonthlyINR": 85000 }
+      }
+    },
+    "Canada": {
+      "currency": "CAD",
+      "rateINR": 62,
+      "visaINR": 22000,
+      "flightOneWayINR": 80000,
+      "healthInsuranceAnnualINR": 75000,
+      "miscAnnualINR": 80000,
+      "tuition": { "MS": 2400000, "MBA": 4500000, "UG": 2800000 },
+      "cities": {
+        "Toronto": { "livingMonthlyINR": 130000 },
+        "Vancouver": { "livingMonthlyINR": 135000 },
+        "Montreal": { "livingMonthlyINR": 95000 },
+        "Waterloo": { "livingMonthlyINR": 100000 },
+        "Calgary": { "livingMonthlyINR": 100000 },
+        "Ottawa": { "livingMonthlyINR": 105000 },
+        "Edmonton": { "livingMonthlyINR": 90000 }
+      }
+    },
+    "Australia": {
+      "currency": "AUD",
+      "rateINR": 56,
+      "visaINR": 42000,
+      "flightOneWayINR": 90000,
+      "healthInsuranceAnnualINR": 55000,
+      "miscAnnualINR": 80000,
+      "tuition": { "MS": 2600000, "MBA": 4800000, "UG": 3000000 },
+      "cities": {
+        "Sydney": { "livingMonthlyINR": 130000 },
+        "Melbourne": { "livingMonthlyINR": 125000 },
+        "Brisbane": { "livingMonthlyINR": 105000 },
+        "Adelaide": { "livingMonthlyINR": 95000 },
+        "Perth": { "livingMonthlyINR": 100000 },
+        "Canberra": { "livingMonthlyINR": 110000 }
+      }
+    },
+    "Germany": {
+      "currency": "EUR",
+      "rateINR": 92,
+      "visaINR": 12000,
+      "flightOneWayINR": 55000,
+      "healthInsuranceAnnualINR": 130000,
+      "miscAnnualINR": 60000,
+      "tuition": { "MS": 200000, "MBA": 2500000, "UG": 150000 },
+      "cities": {
+        "Munich": { "livingMonthlyINR": 110000 },
+        "Berlin": { "livingMonthlyINR": 90000 },
+        "Frankfurt": { "livingMonthlyINR": 105000 },
+        "Hamburg": { "livingMonthlyINR": 95000 },
+        "Stuttgart": { "livingMonthlyINR": 95000 },
+        "Aachen": { "livingMonthlyINR": 80000 },
+        "Heidelberg": { "livingMonthlyINR": 85000 },
+        "Darmstadt": { "livingMonthlyINR": 80000 }
+      }
+    },
+    "Ireland": {
+      "currency": "EUR",
+      "rateINR": 92,
+      "visaINR": 30000,
+      "flightOneWayINR": 65000,
+      "healthInsuranceAnnualINR": 50000,
+      "miscAnnualINR": 70000,
+      "tuition": { "MS": 2100000, "MBA": 4200000, "UG": 2500000 },
+      "cities": {
+        "Dublin": { "livingMonthlyINR": 130000 },
+        "Galway": { "livingMonthlyINR": 95000 },
+        "Cork": { "livingMonthlyINR": 95000 },
+        "Limerick": { "livingMonthlyINR": 90000 }
+      }
+    }
+  }
+}

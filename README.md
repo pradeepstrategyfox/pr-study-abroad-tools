@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PR Study Abroad — Free Tools
 
-## Getting Started
+Lead-magnet tools for [prstudyabroad.com](https://prstudyabroad.com):
 
-First, run the development server:
+1. **University Match / Admit Predictor** (`/university-match`) — bucket universities into Ambitious / Target / Safe based on a student's profile.
+2. **Study Abroad Cost Calculator** (`/cost-calculator`) — country & city-wise itemized INR cost with year-on-year breakdown and monthly burn rate.
+
+Both tools show results inline, then gate the **PDF report** behind a name+email+phone capture form. Leads are sent to a webhook (Google Sheets via Apps Script, or any URL that accepts POST JSON).
+
+## Tech
+
+- Next.js 16 (App Router, Turbopack)
+- React 19
+- Tailwind CSS v4
+- jsPDF for client-side PDF generation
+- Deployed on Vercel
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Variable           | Purpose                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| `LEAD_WEBHOOK_URL` | URL of a Google Apps Script webhook (or any webhook). When unset, leads are console-logged on the server (visible in Vercel logs). |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Setting up a Google Sheet webhook
 
-## Learn More
+1. Create a new Google Sheet, e.g. "PR Study Abroad — Leads".
+2. Extensions → Apps Script. Paste:
 
-To learn more about Next.js, take a look at the following resources:
+```javascript
+function doPost(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const data = JSON.parse(e.postData.contents);
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["timestamp", "tool", "name", "email", "phone", "payload"]);
+  }
+  sheet.appendRow([
+    data.submittedAt || new Date(),
+    data.tool,
+    data.name,
+    data.email,
+    data.phone,
+    JSON.stringify(data.payload),
+  ]);
+  return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(
+    ContentService.MimeType.JSON
+  );
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Deploy → New deployment → Type "Web app" → Execute as "Me" → Access "Anyone".
+4. Copy the web app URL and set `LEAD_WEBHOOK_URL` in Vercel project settings.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Editing data
 
-## Deploy on Vercel
+- Universities: `data/universities.json`
+- Cost ranges per country/city: `data/costs.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Push a commit; Vercel redeploys.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Files
+
+- `app/page.tsx` — landing
+- `app/university-match/page.tsx` — tool 1
+- `app/cost-calculator/page.tsx` — tool 2
+- `app/api/lead/route.ts` — lead webhook
+- `lib/predictor.ts` — admit probability scoring
+- `lib/costs.ts` — cost computation
+- `lib/pdf.ts` — PDF generation
+- `components/LeadModal.tsx` — email/phone capture
